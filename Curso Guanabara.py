@@ -16,3 +16,10 @@
 #n2 = eval (input ('Digite o segundo número:'))
 #soma = n1 + n2
 #print ('A soma é', soma,'.')
+
+
+#EXERCÍCIO 2 (parece o desafio 1)
+
+#nome = input ('Digite seu nome: ')
+#print ('É um prazer te conhecer, {}!'.format(nome)) 
+
