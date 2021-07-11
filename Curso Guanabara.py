@@ -23,3 +23,48 @@
 #nome = input ('Digite seu nome: ')
 #print ('É um prazer te conhecer, {}!'.format(nome)) 
 
+
+#TIPOS PRIMITIVOS (int, float, bool=True or False, str)
+
+#Exemplo 1
+
+#n1 = int (input ('Digite o primeiro número:'))
+#n2 = int (input ('Digite o segundo número:'))
+#s = n1+n2
+
+#print ('A soma entre', n1, 'e', n2, 'vale', s) 
+
+
+
+#print ('A soma entre {} e {} vale {}'.format(n1, n2, s))#outra forma
+
+
+#Desafio 2 is. alguma coisa
+
+#n = input ('Digite algo:')
+#print (n.isnumeric()) #confira se é inteiro
+#print (n.isalpha())#confirma se é letra
+#print (n.isalnum())#confirma se é letra e número 3a por exemplo
+#print (n.isupper())
+
+
+#Desafio 3 soma de números e apresentar resultado
+
+n1 = int (input ('Digite o primeiro número: '))
+n2 = int (input ('Digite o segundo número:  '))
+n3 = int (input ('Digite o terceiro número: '))
+s = n1+n2+n3
+print ('A soma de {}, {} e {} é {}'. format (n1, n2, n3, s))
+
+
+#EXERCÍCIO 4 dissecando uma variável
+ 
+#a = input ('Digite algo: ')
+#print ('O tipo primitivo desse valor é', type(a))
+#print ('Só possui espaço?', a.isspace())
+#print ('É um número?', a.isnumeric())
+#print ('É alfabético?', a.isalpha())
+#print ('É alfanumérico?', a.isalnum())
+#print ('Está em maiúscula?', a.isupper())
+#print ('Está em minúscula?', a.islower())
+#print ('Está capitalizada?', a.istitle())#só primeira letra maiúscula
