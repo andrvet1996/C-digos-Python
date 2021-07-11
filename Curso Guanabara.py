@@ -68,3 +68,14 @@ print ('A soma de {}, {} e {} é {}'. format (n1, n2, n3, s))
 #print ('Está em maiúscula?', a.isupper())
 #print ('Está em minúscula?', a.islower())
 #print ('Está capitalizada?', a.istitle())#só primeira letra maiúscula
+
+#Outra forma de fazer
+a = input('Digite algo: ')
+print(f'O tipo primitivo desse valor é {type(a)}')
+print(f'Só há espaços? {a.isspace()}')
+print(f'É um número? {a.isnumeric()}')
+print(f'É alfabético? {a.isalpha()}')
+print(f'É alfanumérico? {a.isalnum()}')
+print(f'Todas as letras são maiúsculas? {a.isupper()}')
+print(f'Todas as letras são minúsculas? {a.islower()}')
+print(f'Está capitalizada? {a.istitle()}')
