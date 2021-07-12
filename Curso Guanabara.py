@@ -163,3 +163,23 @@ n9 = n * 9
 n10 = n * 10
 print ('A tabuada no número digitado e: {},{},{},{},{},{},{},{},{},{}.'
 .format (n1,n2,n3,n4,n5,n6,n7,n8,n9,n10))
+
+
+#Desafio 10 conversão real/dólar
+r = eval (input('Quantos reais você possui? '))
+d = r / 3.27
+print ('A sua quantia reais corresponde a {:.2f} dólares.'. format (d))
+
+#Desafio 11 área para pintar
+
+l = eval (input ('Qual a largura (m)? '))
+h = eval (input ('Qual a altura (m)? ')) 
+a = l * h
+qt = a / 2
+
+print ('A quantidade de tinta utilizada será de {:.1f} litros.'.format (qt))
+
+#Desafio 12 desconto
+p = eval (input ('Digite o preço atual: '))
+npcd = p - (p * 0.05)
+print ('O preço com desconto de 5% é R${:.2f}.'.format (npcd))
