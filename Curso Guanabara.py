@@ -183,3 +183,8 @@ print ('A quantidade de tinta utilizada será de {:.1f} litros.'.format (qt))
 p = eval (input ('Digite o preço atual: '))
 npcd = p - (p * 0.05)
 print ('O preço com desconto de 5% é R${:.2f}.'.format (npcd))
+
+#Desafio 13 reajuste salarial
+s = eval (input ('Digite seu salário atual: '))
+ns = s + (s * 0.15)
+print ('Seu salário com o aumento de 15% é R$ {:.2f}.'.format (ns))
