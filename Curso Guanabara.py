@@ -35,10 +35,6 @@
 #print ('A soma entre', n1, 'e', n2, 'vale', s) 
 
 
-
-#print ('A soma entre {} e {} vale {}'.format(n1, n2, s))#outra forma
-
-
 #Desafio 2 is. alguma coisa
 
 #n = input ('Digite algo:')
@@ -79,3 +75,77 @@ print(f'É alfanumérico? {a.isalnum()}')
 print(f'Todas as letras são maiúsculas? {a.isupper()}')
 print(f'Todas as letras são minúsculas? {a.islower()}')
 print(f'Está capitalizada? {a.istitle()}')
+
+
+
+#OPERADORES ARITMÉTICOS
+
+#a = 2**3
+#a = pow (2,3) isso é igual a 2**3
+#print (a)
+
+
+#raiz quadrada
+#a = 25**(1/2)
+#print (a)
+
+
+#raiz cúbica
+#a = 27**(1/3)
+#print (a)
+
+#nome = input ('Qual é o seu nome? ')
+#print ('Prazer em conhecê-lo {:=^20}!'.format(nome))
+# {:20} em 20 espaços 
+# {:>20} em 20 espaços a direita
+# {:<20} em 20 espaços a esquerda
+# {:^20} em 20 espaços centralizado
+# {:=^20} em 20 espaços centralizado com símbolo = ou outro que vc escolher
+
+#n1 = int (input ('Digite o primeiro número: '))
+#n2 = int (input ('Digite o segundo número: '))
+#s = n1 + n2
+#m = n1 * n2
+#d = n1 / n2
+#di = n1 // n2
+#e = n1 ** n2
+
+#print ('A soma é {}, o produto é {} e a divisão é {}.'. format (s, m, d), end=' ')
+#end='' comando para não quebrar linha nos print
+#print ('A soma é {}, o produto é {} e a divisão é {:.2f}.'. format (s, m, d))
+#na divisão vai aparecer duas casas decimais
+#print ('A divisão inteira é {} e a potência é {}.'. format (di, e))
+
+
+#Desafio 5 sucessor e antecessor
+
+n = int (input ('Escolha um número inteiro: '))
+n1 = n - 1
+n2 = n + 1
+print ('O seu antecessor é {} e o sucessor é {}.'.format (n1, n2))
+#print ('A soma entre {} e {} vale {}'.format(n1, n2, s))#outra forma
+
+
+#Desafio 6 
+
+#n = int (input ('Digite um número: '))
+#dn = n * 2
+#tn = n * 3
+#rqn = n ** (1/2)
+#print ('O dobro do número, o triplo e a raiz quadrada são, respectivamente {}, {} e {}.'.format (dn, tn, rqn))
+
+
+#Desafio 7
+
+#n1 = int (input ('Nota 1: '))
+#n2 = int (input ('Nota 2: '))
+#M = (n1 + n2) / 2
+#print ('A média do aluno é {}.'. format (M))
+
+#Desafio 8
+
+m = int (input ('Digite o valor em metros: ')) 
+cm = m * 100
+mm = cm * 10
+print ('O valor em centrímetros e milímetros são, respectivamente, {}cm e {}mm.'. format (cm, mm))
+
