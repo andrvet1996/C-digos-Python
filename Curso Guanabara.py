@@ -125,6 +125,9 @@ n2 = n + 1
 print ('O seu antecessor é {} e o sucessor é {}.'.format (n1, n2))
 #print ('A soma entre {} e {} vale {}'.format(n1, n2, s))#outra forma
 
+#outra forma de fazer, sem criar variáveis
+n = int (input('Digite um número: '))
+print ('Analisando o valor {}, seu antecessor é {} e o sucessor é {}.'.format (n, (n-1), (n+1)))
 
 #Desafio 6 
 
