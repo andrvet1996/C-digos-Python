@@ -189,3 +189,9 @@ f = 32 + 1.8 * c
 k = c + 273
 print ('A temperatura {}ºC corresponde a {:.1f}ºF e {:.1f}K.'.format (c, f, k))
 
+#Exercício 15-custo aluguel de carro
+d = eval (input ('Quantos dias você ficou com o carro? '))
+q = eval (input('Quantos quilometros você percorreu? '))
+p = (60 * d) + (0.15 * q)
+print ('O total a pagar é R${:.2f}.'.format (p))
+
