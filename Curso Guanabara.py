@@ -183,3 +183,9 @@ s = eval (input ('Digite seu salário atual: '))
 ns = s + (s * 0.15)
 print ('Seu salário com o aumento de 15% é R$ {:.2f}.'.format (ns))
 
+#Exercício 14-conversão temperatura
+c = eval (input('Digite a temperatura em ºC: '))
+f = 32 + 1.8 * c
+k = c + 273
+print ('A temperatura {}ºC corresponde a {:.1f}ºF e {:.1f}K.'.format (c, f, k))
+
