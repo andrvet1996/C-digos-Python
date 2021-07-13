@@ -195,6 +195,7 @@ q = eval (input('Quantos quilometros você percorreu? '))
 p = (60 * d) + (0.15 * q)
 print ('O total a pagar é R${:.2f}.'.format (p))
 
+
 #Aula 8- comandos math e random
 #import math #impora tudo
 #n = eval (input ('Digite um número: '))
@@ -213,4 +214,7 @@ print ('O total a pagar é R${:.2f}.'.format (p))
 #import random
 #n = random.randint (1,10)#randint gera aleatórios dentro de um intervalo
 #print(n)
+
+import emoji   #importar emoji                                                    
+print(emoji.emojize('Olá, mundo: sunglasses:', use_aliases=True))  
 
