@@ -184,7 +184,7 @@ print ('*' * 12)
 
 
 #Desafio 10 conversão real/dólar
-r = eval (input('Quantos reais você possui? '))
+r = eval (input('Quantos reais você possui? R$ '))
 d = r / 3.27
 print ('A sua quantia reais corresponde a {:.2f} dólares.'. format (d))
 
