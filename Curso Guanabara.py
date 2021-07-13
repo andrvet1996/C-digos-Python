@@ -251,7 +251,6 @@ tangente = tan (radians (ângulo))
 print ('O seno, o cosseno e tangente do ângulo {} são, respectivamente, {:.2f}, {:.2f} e {:.2f}.'
 .format(ângulo, seno, cosseno, tangente))
 
-
 #Desafio 19 escolher um aluno de uma lista
 import random
 a1 = str (input ('Primeiro aluno: '))
@@ -271,3 +270,26 @@ a4 = str (input ('Quarto aluno: '))
 lista = [a1, a2, a3, a4]
 escolhido = choice (lista)
 print ('O aluno escolhido foi {}'.format(escolhido))
+
+#Desafio 20-embaralhar aluno commando Shuffle
+#Desafio 20 embaralhar alunos para escolher
+import random
+a1 = str (input ('Primeiro aluno: '))
+a2 = str (input ('Segundo aluno: '))
+a3 = str (input ('Terceiro aluno: '))
+a4 = str (input ('Quarto aluno: '))
+lista = [a1, a2, a3,a4]
+escolhido = random.shuffle (lista)#comando shuffle embaralha
+print ('A ordem de apresentação será: ')
+print (lista)
+
+#outra forma de fazer
+from random import shuffle
+a1 = str (input ('Primeiro aluno: '))
+a2 = str (input ('Segundo aluno: '))
+a3 = str (input ('Terceiro aluno: '))
+a4 = str (input ('Quarto aluno: '))
+lista = [a1, a2, a3, a4]
+escolhido = shuffle (lista)
+print ('A ordem de apresentação será: ')
+print (lista)
