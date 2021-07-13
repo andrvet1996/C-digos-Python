@@ -190,11 +190,11 @@ print ('A sua quantia reais corresponde a {:.2f} dólares.'. format (d))
 
 #Desafio 11 área para pintar
 
-l = eval (input ('Qual a largura (m)? '))
-h = eval (input ('Qual a altura (m)? ')) 
+l = eval (input ('Qual a largura em metros? '))
+h = eval (input ('Qual a altura em metros? ')) 
 a = l * h
 qt = a / 2
-
+print ('Sua parede possui a área de {:.1f} metros quadrados.'.format (a))
 print ('A quantidade de tinta utilizada será de {:.1f} litros.'.format (qt))
 
 #Desafio 12 desconto
