@@ -251,3 +251,23 @@ tangente = tan (radians (ângulo))
 print ('O seno, o cosseno e tangente do ângulo {} são, respectivamente, {:.2f}, {:.2f} e {:.2f}.'
 .format(ângulo, seno, cosseno, tangente))
 
+
+#Desafio 19 escolher um aluno de uma lista
+import random
+a1 = str (input ('Primeiro aluno: '))
+a2 = str (input ('Segundo aluno: '))
+a3 = str (input ('Terceiro aluno: '))
+a4 = str (input ('Quarto aluno: '))
+lista = [a1, a2, a3, a4]
+escolhido = random.choice (lista)#comando choice escolhe um aluno
+print ('O aluno escolhido foi {}'.format(escolhido))
+
+#outra forma de fazer
+from random import choice
+a1 = str (input ('Primeiro aluno: '))
+a2 = str (input ('Segundo aluno: '))
+a3 = str (input ('Terceiro aluno: '))
+a4 = str (input ('Quarto aluno: '))
+lista = [a1, a2, a3, a4]
+escolhido = choice (lista)
+print ('O aluno escolhido foi {}'.format(escolhido))
