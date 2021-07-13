@@ -216,5 +216,18 @@ print ('O total a pagar é R${:.2f}.'.format (p))
 #print(n)
 
 import emoji   #importar emoji                                                    
-print(emoji.emojize('Olá, mundo: sunglasses:', use_aliases=True))  
+print(emoji.emojize('Olá, mundo: sunglasses:', use_aliases=True))
+
+import math
+n = eval (input ('Digite um número decimal: '))
+n = math.trunc(n)
+print ('A porçaõ inteira do número é {}.'.format (n))
+
+#Desafio 16-comando trunc 
+from math import trunc
+n = eval (input ('Digite um número decimal: '))
+n = trunc(n)
+print ('A porçaõ inteira do número é {}.'.format (n))
+
+
 
