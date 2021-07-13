@@ -198,7 +198,7 @@ print ('Sua parede possui a área de {:.1f} metros quadrados.'.format (a))
 print ('A quantidade de tinta utilizada será de {:.1f} litros.'.format (qt))
 
 #Desafio 12 desconto
-p = eval (input ('Digite o preço atual: '))
+p = eval (input ('Digite o preço atual: R$ '))
 npcd = p - (p * 0.05)
 print ('O preço com desconto de 5% é R${:.2f}.'.format (npcd))
 
