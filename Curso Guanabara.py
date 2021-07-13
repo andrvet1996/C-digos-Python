@@ -227,7 +227,20 @@ print ('A porçaõ inteira do número é {}.'.format (n))
 from math import trunc
 n = eval (input ('Digite um número decimal: '))
 n = trunc(n)
-print ('A porçaõ inteira do número é {}.'.format (n))
+print ('A porção inteira do número é {}.'.format (n))
+
+#Desafio 17-cálculo hipotenusa
+import math 
+a = eval (input ('Digite um cateto: '))
+b = eval (input ('Digite o outro cateto: '))
+h = math.sqrt (a**2 + b**2)
+print ('A hipotenusa é {}.'.format(h))
+
+from math import sqrt
+a = eval (input ('Digite um cateto: '))
+b = eval (input ('Digite o outro cateto: '))
+h = sqrt (a**2 + b**2)
+print ('A hipotenusa é {}.'.format(h))
 
 
 
