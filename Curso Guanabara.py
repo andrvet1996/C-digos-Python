@@ -195,3 +195,22 @@ q = eval (input('Quantos quilometros você percorreu? '))
 p = (60 * d) + (0.15 * q)
 print ('O total a pagar é R${:.2f}.'.format (p))
 
+#Aula 8- comandos math e random
+#import math #impora tudo
+#n = eval (input ('Digite um número: '))
+#raiz = math.sqrt (n)
+#print ('A raiz quadrada de {} é {:.3f}.'.format (n, raiz))
+
+#from math import sqrt
+#n = eval (input ('Digite um número: '))
+#raiz = sqrt(n)
+#print ('A raiz quadrada de {} é {:.2f}.'.format (n, raiz))
+
+#import random  # gera número aleatório
+#n = random.random()
+#print(n)
+
+#import random
+#n = random.randint (1,10)#randint gera aleatórios dentro de um intervalo
+#print(n)
+
