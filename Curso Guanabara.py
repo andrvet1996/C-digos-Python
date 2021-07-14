@@ -321,3 +321,34 @@ lista = [a1, a2, a3, a4]
 escolhido = shuffle (lista)
 print ('A ordem de apresentação será: ')
 print (lista)
+
+#MANIPULANDO STRINGS
+
+frase = 'Curso em vídeo Python'
+letras = frase [9]
+print (letras)
+
+frase = 'Curso em vídeo Python'
+letras = frase [9:13]#vai imprimir até 12 (13-12)
+print (letras)
+
+frase = 'Curso em vídeo Python'
+letras = frase [9:21]#vai imprimir até 20 (21-1)
+print (letras)
+
+frase = 'Curso em vídeo Python'
+letras = frase [9:21:2]#vai imprimir até 20 (21-1), pilando de 2 em 2
+print (letras)
+
+frase = 'Curso em vídeo Python'
+letras = frase [:5]# mesma coisa que [0:5]
+print (letras)
+
+frase = 'Curso em vídeo Python'
+letras = frase [15:]# fatia do 15 até o final da string
+print (letras)
+
+frase = 'Curso em vídeo Python'
+letras = frase [9::3]# ::começa do 9, vai até o final pulando de 3 em 3
+print (letras)
+
