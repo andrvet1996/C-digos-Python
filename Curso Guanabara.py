@@ -352,3 +352,21 @@ frase = 'Curso em vídeo Python'
 letras = frase [9::3]# ::começa do 9, vai até o final pulando de 3 em 3
 print (letras)
 
+#Testes aula 9-strigs
+frase = 'Curso em vídeo Python'
+print (frase)
+print (frase[3])
+print (frase[3:13])
+print (frase[:13])
+print (frase[3:])
+print (frase[0:15])
+print (frase[1:15:2])
+print (frase[::2])
+print (frase.count('o'))#conta quantas letras o há
+print (frase.upper().count('O'))#transforma em maiúsculo e conta o maiúsculo
+print (len(frase))#conta letras e espaços
+print (frase.replace('Python', 'C++'))#substitui Python por C++
+print ('Curso' in frase)
+print (frase.find ('Curso'))# fornece posição da palavra
+print (frase.lower().find ('python'))#transformou Python em mínúsculo antes de dar a posição
+print (frase.split)
