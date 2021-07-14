@@ -229,6 +229,14 @@ n = eval (input ('Digite um número decimal: '))
 n = trunc(n)
 print ('A porção inteira do número é {}.'.format (n))
 
+import math
+n = eval (input('Digite um número decimal: '))
+print ('A parte inteira do número digitado é {}.'.format (math.trunc(n)))
+
+from math import trunc 
+n = eval (input('Digite um número decimal: '))
+print ('A parte inteira do número digitado é {}.'.format (trunc (n)))
+
 #Desafio 17-cálculo hipotenusa
 import math 
 a = eval (input ('Digite um cateto: '))
