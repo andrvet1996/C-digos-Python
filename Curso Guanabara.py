@@ -370,3 +370,12 @@ print ('Curso' in frase)
 print (frase.find ('Curso'))# fornece posição da palavra
 print (frase.lower().find ('python'))#transformou Python em mínúsculo antes de dar a posição
 print (frase.split)
+
+print ('''Os peixes são animais vertebrados, aquáticos, tipicamente ectotérmicos,
+que possuem o corpo fusiforme, os membros transformados em barbatanas ou nadadeiras 
+(ausentes em alguns grupos) sustentadas por raios ósseos ou cartilaginosos, 
+guelras ou brânquias com que respiram o oxigénio dissolvido na água 
+(embora os dipnóicos usem pulmões) e, na sua maior parte, o corpo coberto de escamas.''')
+#comando para imprimir uma string longa
+
+
