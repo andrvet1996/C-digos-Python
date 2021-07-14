@@ -378,4 +378,11 @@ guelras ou brânquias com que respiram o oxigénio dissolvido na água
 (embora os dipnóicos usem pulmões) e, na sua maior parte, o corpo coberto de escamas.''')
 #comando para imprimir uma string longa
 
+frase = 'Curso em vídeo Python'
+dividido = frase.split()
+print (dividido)#divide  a string
+print (dividido[0])#divide e só mostra o elemento do índice
+print (dividido [2][3])#[2] vídeo [3] letra do índice 3
+
+
 
