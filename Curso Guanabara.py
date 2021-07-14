@@ -384,5 +384,13 @@ print (dividido)#divide  a string
 print (dividido[0])#divide e só mostra o elemento do índice
 print (dividido [2][3])#[2] vídeo [3] letra do índice 3
 
-
+#Desafio 22 - manipulando texto
+nome = str(input('Digite seu nome completo: ')).strip() #retira espaços inúteis
+print('Analisando seu nome:')
+print('Seu nome em maiúsculo é {}.'.format (nome.upper()))
+print('Seu nome em minúsculo é {}.'.format (nome.lower()))
+print ('Seu nome tem ao todo {}.'.format (len(nome)-nome.count(' ')))#vc retira o espaços entre os nomes
+#print ('Seu primeiro nome tem {} letras.'.format (nome.find (' ')))#ele diz a posiçaõ do primeiro espaço, que delimita o primeiro nome
+separa = nome.split()
+print ('Seu primeiro nome é {} e ele tem {} letras.'.format (separa [0], len (separa [0])))
 
