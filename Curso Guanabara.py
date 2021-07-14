@@ -253,6 +253,11 @@ b = eval (input ('Digite o outro cateto: '))
 h = sqrt (a**2 + b**2)
 print ('A hipotenusa é {}.'.format(h))
 
+a = eval (input ('Digite um cateto: '))
+b = eval (input ('Digite o outro cateto: '))
+h = (a**2 + b**2) ** 0.5
+print ('A hipotenusa é {}.'.format(h))
+
 #Desafio 18-calcular seno, cosseno e tangente 
 from math import radians, sin, cos, tan
 ângulo = eval (input('Digite o valor de um ângulo em graus: '))
