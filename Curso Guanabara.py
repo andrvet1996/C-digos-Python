@@ -417,3 +417,7 @@ print ('{} dezena(-s);'.format (d))
 print ('{} centena(-s);'.format (c))
 print ('{} milhar(-es);'.format (m))
 
+#Desafio 24- faça um programa e diga se um nome começa ou não com santo
+cidade = str (input ('Digite a cidade em que você nasceu: ')).strip()#retiro espaços desnecessárioxs
+print (cidade[:5].upper() == 'SANTO')#comando upper padroniza, pois converter tudo em maiúsculo. Ou seja a pessoa pode escrever santo, SANTO, SAnto
+
