@@ -421,3 +421,7 @@ print ('{} milhar(-es);'.format (m))
 cidade = str (input ('Digite a cidade em que você nasceu: ')).strip()#retiro espaços desnecessárioxs
 print (cidade[:5].upper() == 'SANTO')#comando upper padroniza, pois converter tudo em maiúsculo. Ou seja a pessoa pode escrever santo, SANTO, SAnto
 
+#Desafio 25 procurar um astring dentro de outra
+#um programa que verifica se existe a palavra silva
+nome = str (input('Digite seu nome completo, sem abreviaturas: ')).strip()
+print ('Seu nome tem Silva? {}.'.format ('Silva' in nome.upper()))
