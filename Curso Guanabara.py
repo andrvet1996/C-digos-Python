@@ -394,3 +394,26 @@ print ('Seu nome tem ao todo {}.'.format (len(nome)-nome.count(' ')))#vc retira 
 separa = nome.split()
 print ('Seu primeiro nome é {} e ele tem {} letras.'.format (separa [0], len (separa [0])))
 
+#Desafio 23 Digitos separados de um número
+
+#Só consigo analisar números com 4 algarismos
+#num = int (input('Informe um número: '))
+#n = str (num)#converte número em string
+#print ('Analisando o número {}, podemos observar:'.format(n))
+#print ('{} unidade(-s);'.format (n[3]))
+#print ('{} dezena(-s);'.format (n[2]))
+#print ('{} centena(-s);'.format (n[1]))
+#print ('{} milhar(-es);'.format (n[0]))
+
+#Consigo analisar qualquer número e não transformar em string
+num = eval (input ('Informe um número: '))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print ('Analisando o número {}, podemos observar:'.format (num))
+print ('{} unidade(-s);'.format (u))
+print ('{} dezena(-s);'.format (d))
+print ('{} centena(-s);'.format (c))
+print ('{} milhar(-es);'.format (m))
+
