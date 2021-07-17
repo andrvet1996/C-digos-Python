@@ -425,3 +425,9 @@ print (cidade[:5].upper() == 'SANTO')#comando upper padroniza, pois converter tu
 #um programa que verifica se existe a palavra silva
 nome = str (input('Digite seu nome completo, sem abreviaturas: ')).strip()
 print ('Seu nome tem Silva? {}.'.format ('Silva' in nome.upper()))
+
+#Desafio 26 - primeira  e última letra de uma string
+frase = str (input ('Digite uma frase: ')).strip ().upper()
+print ('A letra A aparece {} vezes na frase.'.format (frase.count ('A')))
+print ('A primeira letra A apareceu na posição {}.'. format (frase.find ('A')+1))#soma 1 para driblar a real posição que é zero
+print ('A última letra A apareceu na posição {}.'. format (frase.rfind ('A')+1))#rfind procura do final para o começo
