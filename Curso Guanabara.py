@@ -431,3 +431,10 @@ frase = str (input ('Digite uma frase: ')).strip ().upper()
 print ('A letra A aparece {} vezes na frase.'.format (frase.count ('A')))
 print ('A primeira letra A apareceu na posição {}.'. format (frase.find ('A')+1))#soma 1 para driblar a real posição que é zero
 print ('A última letra A apareceu na posição {}.'. format (frase.rfind ('A')+1))#rfind procura do final para o começo
+
+#Desafio 27-cortar string e dizer primeiro e ultimo nome
+n = str (input ('Digite seu nome completo, sem abreviações: ')).strip()
+nome = n.split()# a variável nome recebe o split 
+print ('Prazer em conhecê-lo!')
+print ('Seu primeiro nome é {}.'.format(nome[0]))
+print ('Seu último nome é {}'.format(nome[len(nome)-1]))#escrever nome de qualquer comando
