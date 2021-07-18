@@ -438,3 +438,22 @@ nome = n.split()# a variável nome recebe o split
 print ('Prazer em conhecê-lo!')
 print ('Seu primeiro nome é {}.'.format(nome[0]))
 print ('Seu último nome é {}'.format(nome[len(nome)-1]))#escrever nome de qualquer comando
+
+# Aula 10-estruturas condicionais (if e else)
+#nome = str (input ('Digite seu nome: '))
+#if nome == 'Gustavo':
+    #print ('Que nome lindo você tem!')
+#else:
+    #print ('Seu nome é comum!')
+#print ('Bom dia {}!'.format (nome))#esse print aparece para todos
+
+nome = str (input ('Digite seu nome completo: ')).strip ().upper ()
+n1 = float (input ('Digite a primeira nota: '))
+n2 = float (input ('Digite a segunda nota: '))
+média = (n1 + n2)/2
+if média >= 6:
+    print ('Sua média foi {} {}!. Parabéns!'. format (média, nome))
+else:
+    print ('{} sua média foi {} e está abaixo do esperado. Procure seu professor.'.format (nome,média))
+    
+print ('Independente da nota continuem estudando! Não desanimem n
