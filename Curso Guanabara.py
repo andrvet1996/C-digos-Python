@@ -485,3 +485,14 @@ if computador == jogador:
     print ('Parabéns! Você conseguiu me vencer')
 else:
     print ('Eu ganhei! Eu pensei no número {} e não no número {}.'.format (computador, jogador))
+    
+    
+#Desafio 29-radar de velocidade
+velocidade = float (input ('Velocidade registrada pelo radar, em km/h, foi de: '))
+
+if velocidade > 80.0:
+    excesso = velocidade - 80.0
+    multa = excesso* 7# 7 reais por km excedido da velocidade
+    print ('Você foi multado em {}, pois você excedeu em {} km/h a velocidade máxima de 80 km/h.'.format (multa, excesso))
+else:
+    print ('Parabéns! Você respeitou o limite de velocidade de 80 km/h.') 
