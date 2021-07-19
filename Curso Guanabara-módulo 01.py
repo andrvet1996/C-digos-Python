@@ -511,3 +511,17 @@ if n % 2 != 0:# != diferente
     print ('O número {} é IMPAR.'.format (n))
 else:
     print ('O número é PAR.'.format (n)) 
+
+ #Desafio 30-preço da passagem
+#distância = float (input ('Qual é a distância até o seu destino, em Km? '))
+#if distância <= 200:
+    #p = distância * 0.5
+    #print ('Para distância de {} Km o preço da passagem será R$ {:.2f}'. format (distância, p))
+#else:
+    #pd = distância * 0.45
+    #print ('Para distância de {} Km o preço da passagem será R$ {:.2f}'. format (distância, pd))
+        
+#Outra forma       
+distância = float (input ('Qual é a distância até o seu destino, em Km? '))
+p = distância * 0.5 if distância <=200 else distância * 0.45 
+print ('O preço da passagem será de R$ {:.2f}.'.format (p))
