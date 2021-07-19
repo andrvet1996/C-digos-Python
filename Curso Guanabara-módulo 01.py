@@ -543,3 +543,13 @@ if n2 > n1 and n2 > n3:
 if n3 > n1 and n3 > n2:
     maior = n3
 print ('O menor valor digitado é {} e o maior é {}.'.format (menor, maior))
+
+#Desafio 34-aumentos múltiplos
+sal = float (input ('Digite o valor do seu salário: R$'))
+if sal <= 1250:
+    novosal = (sal + (sal * 0.15))
+print ('Você teve um aumento de 15%, e seu novo salário é de R${:.2f}.'.format (novosal))
+
+else:
+    novosal = (sal + (sal * 0.10))
+print ('Você teve um aumento de 10%, e seu novo salário é de R$ {:2f}.'.format (novosal))
