@@ -496,3 +496,18 @@ if velocidade > 80.0:
     print ('Você foi multado em {}, pois você excedeu em {} km/h a velocidade máxima de 80 km/h.'.format (multa, excesso))
 else:
     print ('Parabéns! Você respeitou o limite de velocidade de 80 km/h.') 
+    
+ 
+#Desafio 30-número par ou impar
+ #n = int (input ('Escolha um número: '))
+#if n % 2 == 0:
+    #print ('O número {} é PAR.'.format (n))
+#else:
+    #print ('O número é ÍMPAR.'.format (n))
+    
+
+n = int (input ('Escolha um número: '))
+if n % 2 != 0:# != diferente
+    print ('O número {} é IMPAR.'.format (n))
+else:
+    print ('O número é PAR.'.format (n)) 
