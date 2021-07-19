@@ -456,4 +456,32 @@ if média >= 6:
 else:
     print ('{} sua média foi {} e está abaixo do esperado. Procure seu professor.'.format (nome,média))
     
-print ('Independente da nota continuem estudando! Não desanimem n
+print ('Independente da nota continuem estudando! Não desanimem!')
+
+#Desafio 28-jogo da adivinhação
+#import random
+#n = int (input ('Escolha um número de 0 a 5: '))
+#lista = [0,1,2,3,4,5]
+#computador = random.choice (lista)
+#lista = [0,1,2,3,4,5]
+#print ('O computador pensou o número {}.'.format (computador))
+#if n == computador:
+    #print ('Parabéns você adivinhou !!!')
+#else:
+    #print ('Que pena, você errou !!!')
+#print ('Se você errou tente novamente. Não desanime!')
+
+#outra forma de fazer 
+from random import randint
+from time import sleep#faz o computador aguardar
+computador = randint(0, 5)#faz o computador escolher
+print ('*'*55)
+print ('Vou pensar em um número entre 0 e 5. Tente adivinhar...')
+print ('*'*55)
+jogador = int (input ('Que número eu pensei? '))#jogador tenta adivinhar
+print ('Processando...')
+sleep (3)#espera 3 segundos para processar
+if computador == jogador:
+    print ('Parabéns! Você conseguiu me vencer')
+else:
+    print ('Eu ganhei! Eu pensei no número {} e não no número {}.'.format (computador, jogador))
