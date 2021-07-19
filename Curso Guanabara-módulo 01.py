@@ -553,3 +553,16 @@ print ('Você teve um aumento de 15%, e seu novo salário é de R${:.2f}.'.forma
 else:
     novosal = (sal + (sal * 0.10))
 print ('Você teve um aumento de 10%, e seu novo salário é de R$ {:2f}.'.format (novosal))
+
+
+#Desafio 35-verificar se é possível formar um triângulo
+print ('#' * 24)
+print ('Analisador de triângulos')
+print ('#' * 24)
+a = float (input ('Valor do primeiro segmento: '))
+b = float (input ('Valor do segundo segmento:  '))
+c = float (input ('Valor do terceiro segmento: '))
+if a < b + c and b < a + c and c < a + b:
+    print ('Os segmentos {}, {} e {} FORMAM um triângulo.'.format (a, b, c))
+else:
+    print ('Os segmentos {}, {} e {} NÃO FORMAM um triângulo.'.format (a, b, c))
