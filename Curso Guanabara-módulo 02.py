@@ -9,3 +9,14 @@ elif nome in ('Ana Cláudia Jéssica Julina'):
 else:# se vc tirar o else funciona,mas só printa o último print
     print ('Seu nome é bem normal!')
 print ('Tenha um bom dia, {}!'.format (nome)) 
+
+#Desafio 36-número de prestações não pode exceder 30% do salário
+v = float (input ('Qual o valor da casa que deseja adquirir? R$'))
+s = float (input ('Qual é o seu salário? R$'))
+t = int (input ('Em quantos anos de financiamento?' ))
+valprest = (v / (t * 12))#parcelas mensais
+lim30 = (0.3 * s)
+if valprest <= lim30:
+    print ('O empréstimo para adquirir uma casa de {:.2f}, a ser pago em {} parcelas mensais, no valor de R$ {:.2f} foi APROVADO!'.format (v, t, valprest))
+else:
+    print ('O empréstimo NÃO FOI APROVADO, pois o valor da prestação ultrapassa 30% de sua renda mensal.')
