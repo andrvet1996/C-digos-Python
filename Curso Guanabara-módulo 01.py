@@ -566,3 +566,11 @@ if a < b + c and b < a + c and c < a + b:
     print ('Os segmentos {}, {} e {} FORMAM um triângulo.'.format (a, b, c))
 else:
     print ('Os segmentos {}, {} e {} NÃO FORMAM um triângulo.'.format (a, b, c))
+   
+#AULA 11-colocar cor e estilo nas letras
+ #print ('\033[4;30;45m Olá mundo!\033[m')
+#print ('\033[1;31m Olá mundo!\033[m')
+#print ('\033[1;30;37m Olá mundo!\033[m')
+
+nome = 'André'
+print ('Prazer em conhecê-lo {}{}{}!'.format ('\033[1;31;33m', nome,'\033[m'))
