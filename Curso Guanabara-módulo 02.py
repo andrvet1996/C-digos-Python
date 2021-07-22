@@ -61,3 +61,22 @@ elif idade < 18:
     print('Você deve se alistar em {}.'.format(ano_para_se_alistar).upper())
 else:
     print('Você precisa se alistar IMEDIATAMENTE. Procure a Junta Militar mais próxima de sua residência.'
+          
+  #outra forma de fazer      
+from datetime import date #não precisa digitar o ano atual
+atual = date.today().year
+nasc = int (input ('Ano de nascimento: '))
+idade = atual - nasc
+print ('Quem nasceu em {} tem {} anos em {}.'.format (nasc,idade,atual))
+if idade == 18:
+    print ('Você tem de se alistar IMEDIATAMENTE!')
+elif idade < 18:
+    saldo = 18 - idade 
+    print ('Ainda faltam {} anos para o alistamento.'.format (saldo))
+    ano = saldo + atual
+    print ('Seu alistamento será em {}.'.format (ano))
+else:
+    saldo = idade - 18 # posso chamar de saldo porque está dentro da identação
+    print ('Você já deveria ter se alistado há {} anos.'.format (saldo))
+    ano = atual - saldo# posso dar o memso nome devido a identação
+    print ('Você deveria ter se alistado em {}.'.format (ano))
