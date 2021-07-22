@@ -103,3 +103,21 @@ elif média >=5.0 and média <7.0:
     print ('Você está em RECUPERAÇÃO, pois a média {:.1f} está entre 5.0 e 6.9.'.format (média))
 else:
     print ('Você está APROVADO, pois a média {:.1f} é maior que 7.0. Parabéns!!!'.format (média))
+          
+          
+ #Desafio 41-categoria de atletas
+from datetime import date
+data_atual = date.today().year
+nome = str (input ('Nome completo do atleta: '))
+dn = int (input ('Ano de nascimento: '))
+idade = data_atual - dn
+if idade <= 9:
+    print ('O atleta {} tem {} anos e pertence a categoria MIRIM.'.format (nome,idade))
+elif 9< idade <=14:
+    print ('O atleta {} tem {} anos e pertence a categoria INFANTIL.'.format (nome,idade))
+elif 15< idade <=19:
+    print ('O atleta {} tem {} anos e pertence a categoria JUNIOR.'.format (nome,idade))
+elif 20< idade <=25:
+    print ('O atleta {} tem {} anos e pertence a categoria SÊNIOR.'.format (nome,idade))
+else:
+    print ('O atleta {} tem {} anos e pertence a categoria MASTER.'.format (nome,idade))
