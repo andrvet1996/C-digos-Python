@@ -48,3 +48,16 @@ elif n1 < n2:
     print ('O número {} é MENOR que {}.'.format (n1, n2))
 else:
     print ('Os números são IGUAIS.')
+    
+#Desafio 39-alistamento militar
+    
+ano_atual = int(input('Digite o ano atual: '))
+ano_nascimento = int(input("Digite seu ano de nascimento: "))
+idade = ano_atual - ano_nascimento
+ano_para_se_alistar = ano_atual + (18 - idade)
+if idade == 18:
+    print('Você deve se alistar esse ano. Procure a Junta Militar mais próxima de sua residência.'.upper())
+elif idade < 18:
+    print('Você deve se alistar em {}.'.format(ano_para_se_alistar).upper())
+else:
+    print('Você precisa se alistar IMEDIATAMENTE. Procure a Junta Militar mais próxima de sua residência.'
