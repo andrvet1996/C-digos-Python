@@ -156,3 +156,31 @@ elif 30.0 <= imc < 40.0:
     print ('Seu IMC é {:.1f}. Você está OBESO.'.format (imc))
 else:
     print ('Seu IMC é {:.1f}. Você está com OBESIDADE MÓRBIDA.'.format (imc))
+          
+#Desafio 43-Descontos na loja
+print('=' * 13)
+print('LOJA DO ANDRÉ')
+print('=' * 13)
+preço = float(input('Preço das compras: R$ '))
+print('''Condições de pagamento:
+[1] à vista dinheiro/cheque 
+[2] à vista cartão
+[3] 2x no cartão
+[4] 3x ou mais no cartão''')
+condição = int(input('Escolha a forma de pagamento: '))
+if condição == 1:
+    desc = preço - (0.1 * preço)
+    print('O valor a pagar, com o desconto de 10%, é de R${:.2f}.'.format(desc))
+elif condição == 2:
+    desc = preço - (0.05 * preço)
+    print('O valor a pagar, com o desconto de 5%, é de R${:.2f}.'.format(desc))
+elif condição == 3:
+    parcela = preço / 2
+    print('O valor a pagar, sem desconto, é de R${:.2f}, dividido em duas parcelas de R${:.2f}.'.format(preço, parcela))
+elif condição == 4:
+    acresc = preço + (0.20 * preço)
+    parcelas = int(input('Número de parcelas: '))
+    cada_parcela = acresc / parcelas
+    print('O valor a pagar, com acréscimo de 20%, é de R${:.2f}, dividido em {} de R${:.2f}.'.format(acresc, parcelas, cada_parcela))
+else:
+    print('Opção \033[1;31mINVÁLIDA!\033[m Tente novamente.')#letra vermelha          
