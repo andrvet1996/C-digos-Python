@@ -80,3 +80,26 @@ else:
     print ('Você já deveria ter se alistado há {} anos.'.format (saldo))
     ano = atual - saldo# posso dar o memso nome devido a identação
     print ('Você deveria ter se alistado em {}.'.format (ano))
+          
+          
+   #Desafio 30-cálculo média
+#n1 = float (input ('Digite a primeira nota: '))
+#n2 = float (input ('Digite a segunda nota:  ')) 
+#média =  (n1 + n2) / 2
+#if média < 5.0:
+    #print ('Você foi REPROVADO, pois a média {:.1f} é menor que 5.0.'.format (média))
+#elif média > 7.0:
+    #print ('Você foi APROVADO, pois a média {:.1f} é maior que 7.0. Parabéns!'.format (média))
+#else:
+    #print ('Você está em RECUPERAÇÃO, pois a média {:.1f} está entre 5.0 e 6.9.'.format (média))
+    
+#outra forma
+n1 = float (input ('Digite a primeira nota: '))
+n2 = float (input ('Digite a segunda nota:  ')) 
+média =  (n1 + n2) / 2
+if média < 5.0:
+    print ('Você foi REPROVADO, pois a média {:.1f} é menor que 5.0.'.format (média))
+elif média >=5.0 and média <7.0:
+    print ('Você está em RECUPERAÇÃO, pois a média {:.1f} está entre 5.0 e 6.9.'.format (média))
+else:
+    print ('Você está APROVADO, pois a média {:.1f} é maior que 7.0. Parabéns!!!'.format (média))
