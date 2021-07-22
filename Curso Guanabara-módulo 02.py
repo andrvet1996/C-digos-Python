@@ -36,3 +36,15 @@ elif opção == 3:
     print('{} convertido para HEXADECIMAL é igual a {}.'.format(num, hex(num)[2:]))
 else:
     print('Opção inválida! Tente novamente.')
+    
+    
+#Desafio 38-comparara 2 números e dizer maior, menor ou =
+
+n1 = int (input ('Digite o primeiro número: '))
+n2 = int (input ('Digite o segundo número:  '))
+if n1 > n2:
+    print ('O número {} é MAIOR que {}.'.format (n1, n2))
+elif n1 < n2: 
+    print ('O número {} é MENOR que {}.'.format (n1, n2))
+else:
+    print ('Os números são IGUAIS.')
