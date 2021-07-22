@@ -121,3 +121,23 @@ elif 20< idade <=25:
     print ('O atleta {} tem {} anos e pertence a categoria SÊNIOR.'.format (nome,idade))
 else:
     print ('O atleta {} tem {} anos e pertence a categoria MASTER.'.format (nome,idade))
+          
+          
+#Desafio 42-analisador de triângulo
+print('#' * 24)
+print('Analisador de triângulos')
+print('#' * 24)
+a: float = float(input('Valor do primeiro segmento: '))
+b = float(input('Valor do segundo segmento:  '))
+c = float(input('Valor do terceiro segmento: '))
+if a < b + c and b < a + c and c < a + b:
+    print('Os segmentos {}, {} e {} FORMAM UM TRIÂNGULO.'.format(a, b, c))
+    if a == b == c:#não coloque elif,pois há duas possibilidades é ou não é triângulo
+        #esse if está identado desse jeito porque está ligado ao tipo de triângulo
+        print('O triângulo é EQUILÁTERO.')
+    elif a != b and b != c and c != a:
+        print('O triângulo é ESCALENO.')
+    else:
+        print('O triângulo é ISÓSCELES.')
+else:
+    print('Os segmentos {}, {} e {} NÃO FORMAM UM TRIÂNGULO')
