@@ -232,3 +232,12 @@ for c in range (0, 4):
     n = int (input ('Digite um valor: '))
     soma += n # soma += n é o mesmo que soma = soma + n
 print ('O somatório de todos os números digitados é {}.'.format (soma))
+          
+          
+#Desafio 46-contagem regressiva
+from time import sleep
+for c in range (10, -1, -1):# o primeiro -1 faz a contagem chegar a zer
+    print (c)
+    sleep (0.5)#espera 1s entre os números
+sleep (1)#espera 1s até o BUM
+print ('BUM! BUM! BUM!')
