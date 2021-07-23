@@ -241,3 +241,13 @@ for c in range (10, -1, -1):# o primeiro -1 faz a contagem chegar a zer
     sleep (0.5)#espera 1s entre os números
 sleep (1)#espera 1s até o BUM
 print ('BUM! BUM! BUM!')
+          
+
+ #Desafio 47-contagem dos números pares entre 0 e 50
+#for n in range (1, 51):#imprimi de 1 a 50
+    #if n % 2 == 0:
+        #print (n, end=' ')#end = dá um espaço entre os números
+    
+#outra forma    
+for n in range (2, 51, 2):#imprimi de 1 a 50
+        print (n, end=' ')#end = dá um espaço entre os números
