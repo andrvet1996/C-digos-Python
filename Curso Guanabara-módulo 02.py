@@ -261,3 +261,10 @@ for n in range (1, 501, 2):
         soma += n # = soma = soma + n
 print ('A soma dos {} números múltiplos de 3, entre 1 e 500, é {}.'.format (cont, soma))
 # o print não identa, pois vc precisa fazer todas as somas até o 500
+                
+#Desafio 49-tabuada
+num = int (input ('Digite um número para ver sua tabuada: '))
+print ('=' * 12)
+for c in range (1, 11):#evita fazer 10 linhas
+    print ('{} x {:2} = {}'.format (num, c, num*c))
+print ('=' * 12)
