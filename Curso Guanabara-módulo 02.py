@@ -246,8 +246,18 @@ print ('BUM! BUM! BUM!')
  #Desafio 47-contagem dos números pares entre 0 e 50
 #for n in range (1, 51):#imprimi de 1 a 50
     #if n % 2 == 0:
-        #print (n, end=' ')#end = dá um espaço entre os números
-    
+        #print (n, end=' ')#end = dá um espaço entre os números   
 #outra forma    
 for n in range (2, 51, 2):#imprimi de 1 a 50
         print (n, end=' ')#end = dá um espaço entre os números
+  
+          
+ #Desafio 48-Soma ímpares múltiplos de três entre 1 e 500
+soma = 0
+cont = 0#contador
+for n in range (1, 501, 2):
+    if n % 3 == 0:
+        cont = cont + 1# me diz quantos múltiplos de 3 há entre 1 e 500
+        soma += n # = soma = soma + n
+print ('A soma dos {} números múltiplos de 3, entre 1 e 500, é {}.'.format (cont, soma))
+# o print não identa, pois vc precisa fazer todas as somas até o 500
