@@ -183,4 +183,52 @@ elif condição == 4:
     cada_parcela = acresc / parcelas
     print('O valor a pagar, com acréscimo de 20%, é de R${:.2f}, dividido em {} de R${:.2f}.'.format(acresc, parcelas, cada_parcela))
 else:
-    print('Opção \033[1;31mINVÁLIDA!\033[m Tente novamente.')#letra vermelha          
+    print('Opção \033[1;31mINVÁLIDA!\033[m Tente novamente.')#letra vermelha
+    
+          
+  #Aula 13-LAÇOS DE REPETIÇÃO
+#for c in  range (0, 6):#repete oi 6x
+    #print ('Oi!')
+#print ('FIM!')
+
+#contagem
+#for c in range (1, 6):#conta mas não imprimi o último número
+    #print (c)
+#print ('FIM!')
+
+'''#contagem para trás
+for c in range (0, 6, -1): 
+    print (c)#acrescenta -1 para contar para trás
+print ('FIM!')
+
+#contagem pulando
+for c in range (0, 6, 2): 
+    print (c)#conta e pula de 2 em 2
+print ('FIM!')'''
+
+#n = int (input ('Digite um número: '))
+#for c in range (0, n):#usuário define a contagem, mas não conta o último
+    #print (c)
+#print ('FIM!')
+
+#n = int (input ('Digite um número: '))
+#for c in range (0, n+1):#usuário define a contagem, conta o último n+1
+    #print (c)
+#print ('FIM!')
+
+#i = int (input ('Início: '))#define início (i), contagem total (f+1) e pulos (p)
+#f = int (input ('Fim:    '))
+#p = int (input ('Passo:  '))
+#for c in range (i, f+1, p):
+    #print (c)
+#print ('FIM!')
+
+#for c in range (0, 4):
+    #n = int (input ('Digite um número: '))# repetir o input n vezes
+#print ('FIM')
+
+soma = 0
+for c in range (0, 4):
+    n = int (input ('Digite um valor: '))
+    soma += n # soma += n é o mesmo que soma = soma + n
+print ('O somatório de todos os números digitados é {}.'.format (soma))
