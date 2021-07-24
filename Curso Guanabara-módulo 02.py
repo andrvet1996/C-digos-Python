@@ -268,3 +268,14 @@ print ('=' * 12)
 for c in range (1, 11):#evita fazer 10 linhas
     print ('{} x {:2} = {}'.format (num, c, num*c))
 print ('=' * 12)
+
+ 
+#Desafio 50-soma de seis números pares
+soma = 0
+cont = 0
+for n in range (1, 7):
+    n = int (input ('Digite o valor {}: '. format (n)))
+    if n % 2 == 0:
+        soma += n
+        cont += 1# = a cont = n + 1
+print ('Você informou {} número(-s) PAR(-ES) e a soma deles é {}.'.format (cont, soma))         
