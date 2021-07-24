@@ -278,4 +278,18 @@ for n in range (1, 7):
     if n % 2 == 0:
         soma += n
         cont += 1# = a cont = n + 1
-print ('Você informou {} número(-s) PAR(-ES) e a soma deles é {}.'.format (cont, soma))         
+print ('Você informou {} número(-s) PAR(-ES) e a soma deles é {}.'.format (cont, soma))     
+          
+         
+#Desafio 51-PA de 10 números e soma
+print ('=' * 25)
+print ('     PA DE 10 TERMOS      ')
+print ('=' * 25)
+a1 = int (input ('Digite o primeiro termo da PA (a1): '))
+r = int (input ('Digite a razão (r): '))
+décimo = a1 + (10 - 1) * r # para descobrir o 10 termo 
+soma = ((a1 + décimo) * 10) / 2
+for c in range (a1, décimo + r, r):
+    print ('{}'.format (c), end= ' > ') #primeiro termo a1 e pula a razão
+print ('FIM')
+print ('A soma dos 10 termos é igual a {}.'. format (soma)
