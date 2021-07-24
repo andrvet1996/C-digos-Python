@@ -294,6 +294,7 @@ for c in range (a1, décimo + r, r):
 print ('FIM')
 print ('A soma dos 10 termos é igual a {}.'. format (soma)
        
+       
 #Desafio 52-número primo
 num = int (input ('Digite um número: '))
 tot = 0 #mostra o número de vezes qu eum número é divisivel e da resto 0
@@ -312,3 +313,32 @@ if tot == 2:
     print ('E por isso ele É PRIMO!') 
 else:
     print ('E por isso ele NÃO É PRIMO!')
+       
+       
+#Desafio 53-palíndromo
+'''frase = str (input ('Digite uma frase: ')).strip() .upper()
+palavras = frase.split()#separa as palavras pelo espaço
+junto = ''.join (palavras)#retira os espaços
+inverso = ''#inverte as letras de junto
+
+for letra in range (len (junto) - 1, -1, -1):#os -1 lê a string de trás para frente
+    inverso += junto [letra]
+print (" o inverso de {} é {}.".format (junto, inverso))
+    
+if inverso == junto:
+    print ('A frase {} é um palíndromo.'.format (frase))
+else:
+    print ('A frase {} não é um palíndromo.'.format (frase))'''
+              
+#outra forma de fazer sem for        
+frase = str (input ('Digite uma frase: ')).strip() .upper()
+palavras = frase.split()#separa as palavras pelo espaço
+junto = ''.join (palavras)#retira os espaços
+inverso = junto [::-1] #inverte as letras do junto
+
+print ('O inverso de {} é {}.'.format (junto, inverso))
+    
+if inverso == junto:
+    print ('A frase {} é um palíndromo.'.format (frase))
+else:
+    print ('A frase {} não é um palíndromo.'.format (frase))
