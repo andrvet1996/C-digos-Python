@@ -342,3 +342,21 @@ if inverso == junto:
     print ('A frase {} é um palíndromo.'.format (frase))
 else:
     print ('A frase {} não é um palíndromo.'.format (frase))
+       
+       
+#Desafio 54-separar maiores e menores de idade
+from datetime import date
+atual = date.today().year
+totmaior = 0#cpntadores
+totmenor = 0
+
+for dn in range (1,8):
+    dn = int(input('Em que ano a {}ª pessoa nasceu? '.format (dn)))
+    idade = atual - dn
+    if idade >= 18:
+        totmaior += 1
+        print ()
+    else:
+        totmenor += 1
+print ('Ao todo tivemos {} pessoas maiores e {} pessoas menores de idade.'.format (totmaior, totmenor))
+
