@@ -293,3 +293,22 @@ for c in range (a1, décimo + r, r):
     print ('{}'.format (c), end= ' > ') #primeiro termo a1 e pula a razão
 print ('FIM')
 print ('A soma dos 10 termos é igual a {}.'. format (soma)
+       
+#Desafio 52-número primo
+num = int (input ('Digite um número: '))
+tot = 0 #mostra o número de vezes qu eum número é divisivel e da resto 0
+
+for c in range (1, num + 1):
+    if num % c == 0:
+        print ('\033[33m', end='')#se o número for divisível amarelo
+        tot += 1 # é igual a tot = tot + 1 quantas vezes foi divisível
+    else:
+        print ('\033[31m', end='')#se não for divisível vermelho
+    print ('{}'.format (c), end=' ')#pertece ao if e ao else, printa os divisiveis e não divisiveis
+        
+        
+print ('\n\033[mO número {} foi divisível {} vezes.'.format (num, tot))#código para retirar a cor
+if tot == 2:
+    print ('E por isso ele É PRIMO!') 
+else:
+    print ('E por isso ele NÃO É PRIMO!')
