@@ -360,3 +360,19 @@ for dn in range (1,8):
         totmenor += 1
 print ('Ao todo tivemos {} pessoas maiores e {} pessoas menores de idade.'.format (totmaior, totmenor))
 
+#Desafio 55-menor e maior peso
+maior = 0
+menor = 0
+
+for p in range (1, 6):
+    peso = float (input('O peso da {}ª pessoa: '.format (p)))
+    if p == 1:# se o maior e o menor peso estiver na primeira pessoa
+        maior = peso
+        menor = peso
+    else:#verifica se não for a primeira pessoa
+        if peso > maior:
+            maior = peso
+        if peso < menor:
+            menor = peso
+            
+print ('O maior peso lido foi de {}Kg e o menor foi de {}Kg.'.format (maior, menor))
