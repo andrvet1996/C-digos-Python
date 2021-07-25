@@ -1,0 +1,8 @@
+#Exercício 1-cálculo da velocidade
+d = float (input ('Distância percorrida em Km: '))
+t = float (input ('Tempo em h: '))
+v = d / t
+if v > 110:
+    print ('Sua velocidade média foi de {:.2f}Km/h e ultrapassou o limite de 110 Km/h.'.format (v))
+else:
+    print ('Parabéns! Sua velocidade foi de {:.2f}Km/h e não ultrapassou o limite de 110 Km/h.'.format (v))
