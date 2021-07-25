@@ -1,0 +1,15 @@
+"Algoritmo 3.5-Equação seguno grau
+a = float(input('Digite a: '))
+b = float(input('Digite b: '))
+c = float(input('Digite c: '))
+
+if a == 0:
+    print('NÃO É EQUAÇÃO 2º GRAU')
+else:
+    print('É UMA EQUAÇÃO 2º GRAU')
+
+d = (b ** 2) - 4 * a * c
+print('Delta = {}.'.format(d))
+r1 = ((-1 * b) + (d ** 0.5)) / 2 * a
+r2 = ((-1 * b) - (d ** 0.5)) / 2 * a
+print('O conjunto solução da equação é ({}, {}).'.format(r1, r2))
