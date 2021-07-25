@@ -6,3 +6,23 @@ if v > 110:
     print ('Sua velocidade média foi de {:.2f}Km/h e ultrapassou o limite de 110 Km/h.'.format (v))
 else:
     print ('Parabéns! Sua velocidade foi de {:.2f}Km/h e não ultrapassou o limite de 110 Km/h.'.format (v))
+    
+#Exercício 2-leitor de temperatura
+print ('#' * 43)
+print ('ESCALA DA FEBRE')
+print ('''Abaixo de 36.0ºC - HIPOTERMIA
+Entre 36.0ºC a 36.5ºC - TEMPERATURA NORMAL
+Entre 36.6ºC a 38.0ºC - FEBRE
+Acima de 38.0ºC - FEBRE ALTA''')
+print ('#' * 43)
+
+for temp in range (1,5):
+    temp = float (input ('Digite a temperatura (ºC): '))
+    if temp > 36.5 and temp < 38.0:
+        print ('Febre! Procure o médico!')
+    elif temp > 38.0:
+        print ('Febre alta! Procure o médico imediatamente!')
+    elif temp < 36.0:
+        print ('Hipotermia! Procure o médico imediatamente!')
+    else:
+        print ('Temperatura normal.')
