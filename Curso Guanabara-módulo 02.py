@@ -446,4 +446,10 @@ while n != 0:
             impar += 1
 print ('Temos na sequência {} números pares e {} ímpares.'.format (par, impar))
 print ('FIM')
-        
+
+       
+#Desafio 57-digitar sexo corretamente
+sexo = str(input('Informe seu sexo [M/F]:')) .upper() .strip()[0]#[0] só pego a primeira letra
+while sexo not in 'MF':#faço assim porque é uma string
+    sexo = str(input('Dados inválidos. Por favor informe seu sexo.'))
+print ('Sexo {} registrado com sucesso.'.format (sexo))
