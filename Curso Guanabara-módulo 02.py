@@ -409,3 +409,41 @@ print ('A média de idade do grupo é de {} anos.'.format (médiaidade))
 print ('O homem mais velho tem {} e seu nome é {}.'.format (maioridadehomem, nomevelho))
 print ('Ao todo são {} mulheres com menos de 20 anos.'.format (totmulher20))
 
+
+#Aula 14- comando while
+'''for c in range (1, 10):
+    print (c)
+print ('FIM')'''
+
+#Usando while ( sei o limite: while ou for/ não sei o limite while)
+'''c = 1
+while c < 10:
+    print (c)
+    c += 1 # c = c + 1
+print ('FIM')'''
+
+
+'''n = 1
+while n != 0: #enquanto n for diferente de 0
+    n = int(input('Digite um valor: '))
+    print (n)
+print ('FIM')'''
+
+''''r = 'S'
+while r == 'S':
+    n = int(input('Digite um valor: '))
+    r = str(input('Quer continuar? [S/N]: ')) .upper()
+print ('FIM')'''
+
+par = impar = 0
+n = 1
+while n != 0:
+    n = int(input('Digite um valor: '))
+    if n != 0:#para ele não contra o zero como par
+        if n % 2 == 0 and n != 0:
+            par += 1
+        else:
+            impar += 1
+print ('Temos na sequência {} números pares e {} ímpares.'.format (par, impar))
+print ('FIM')
+        
