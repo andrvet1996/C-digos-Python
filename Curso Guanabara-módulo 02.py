@@ -376,3 +376,36 @@ for p in range (1, 6):
             menor = peso
             
 print ('O maior peso lido foi de {}Kg e o menor foi de {}Kg.'.format (maior, menor))
+       
+       
+Desafio 56- analise detalhada
+somaidade = 0 #inicialização das variáveis
+médiaidade = 0
+maioridadehomem = 0
+nomevelho = ''
+totmulher20 = 0
+
+for p in range (1,5):
+    print ('----- {}ª PESSOA -----'.format (p))
+    nome  = str (input ('Nome completo: ')) .strip() .upper()
+    idade = int (input ('Idade? '))
+    sexo  = str (input ('Sexo [M/F}: ')) .strip() .upper()
+    somaidade += idade #somaidade = somaidade + idade
+    
+    if p == 1 and sexo == 'M':# se o homem mais velho é a primeira pessoa
+        maioridadehomem = idade #considera a idade e não número de homens
+        nomevelho = nome
+        
+    if sexo == 'M' and idade > maioridadehomem:# seu e não colocar upper no sexo tenho de fazer sexo in ('Mm')
+        maioridadehomem = idade
+        nomevelho = nome
+        
+    if sexo == 'F' and idade < 20:
+        totmulher20 += 1 #qtde de mulher
+        
+médiaidade = somaidade / 4
+
+print ('A média de idade do grupo é de {} anos.'.format (médiaidade))
+print ('O homem mais velho tem {} e seu nome é {}.'.format (maioridadehomem, nomevelho))
+print ('Ao todo são {} mulheres com menos de 20 anos.'.format (totmulher20))
+
