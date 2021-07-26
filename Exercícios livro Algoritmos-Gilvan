@@ -26,3 +26,21 @@ for temp in range (1,5):
         print ('Hipotermia! Procure o médico imediatamente!')
     else:
         print ('Temperatura normal.')
+        
+#Exercício 3.6 - Fórmula de Heirão para cálculo de área
+a = float(input('Primeiro lado:  '))
+c = float(input('Segundo  lado:  '))
+base = float(input('Base:  '))
+semi = (a + base + c) / 2
+área = (semi * ((semi - a)*(semi - base)*(semi - c))) ** 0.5
+h = 2 * área / base
+print('A área do triângulo é {:.2f} e sua altura {:.2f}.'. format(área, h))
+
+'''#Perímetro de qualquer figura geométrica
+
+perímetro = 0
+for l in range (1,4):#4 porque é triângulo
+    l = float(input('Digite o valor do lado: '))
+    perímetro += l
+    semiperímetro = perímetro / 2
+print ('O perímetro da figura é {} e seu semiperímetro {}.'.format (perímetro, semiperímetro))'''
