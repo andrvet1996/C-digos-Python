@@ -453,3 +453,28 @@ sexo = str(input('Informe seu sexo [M/F]:')) .upper() .strip()[0]#[0] só pego a
 while sexo not in 'MF':#faço assim porque é uma string
     sexo = str(input('Dados inválidos. Por favor informe seu sexo.'))
 print ('Sexo {} registrado com sucesso.'.format (sexo))
+       
+#Desafio 58-jogo da adivinhação
+print ('*' * 20)
+print ('JOGO DA ADIVINHAÇÃO')
+print ('*' * 20)
+
+from random import randint
+computador = randint (0, 10)#escolha do computador
+print ('''Sou seu computador...
+Acabei de pensar um número entre 0 e 10.
+Será que você consegue adivinhar qual foi?''')
+acertou = False#enquanTO não acertou recebe false
+palpites = 0 #contador de palpites
+
+while not acertou:
+    jogador = (int(input('Qual é o seu palpite? ')))
+    palpites += 1
+    if jogador == computador:
+        acertou = True
+    else:
+        if jogador > computador:
+            print ('Menos... Tente mais uma vez!')
+        else:#poderia colocar elif jogador < computador
+            print ('Mais... Tente mais uma vez!')
+print ('Acertou com {} palpites. Parabéns!'.format (palpites))
