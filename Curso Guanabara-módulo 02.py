@@ -478,3 +478,50 @@ while not acertou:
         else:#poderia colocar elif jogador < computador
             print ('Mais... Tente mais uma vez!')
 print ('Acertou com {} palpites. Parabéns!'.format (palpites))
+       
+       
+#Desafio 59-menu de opções
+from time import sleep#dá um intervalo entre os blocos
+n1 = int (input ('Primeiro valor: '))
+n2 = int (input ('Segundo valor:  '))
+escolha = 0
+while escolha != 6:#5 é para parar o programa
+    print ('''[1] somar
+[2] multiplicar
+[3] maior
+[4] novos números
+[5] sair do programa)''')
+
+    escolha = (int (input ('>>>>> Qual é sua opção? ')))
+
+    if escolha == 1:
+        soma = n1 + n2
+        print ('A soma entre {} e {} é {}.'.format (n1, n2, soma))
+    
+    elif escolha == 2:
+        prod = n1 * n2 
+        print ('O produto de {} por {} é {}'.format (n1, n2, prod))
+    
+    elif escolha == 3:
+        if n1 > n2:
+            maior = n1
+        else:
+            maior = n2
+        print ('Entre {} e {} o maior número é {}.'.format (n1, n2, maior))
+    
+    elif escolha == 4:
+        print ('Informe os números novamente: ')
+        n1 = int (input ('Primeiro valor: '))
+        n2 = int (input ('Segundo valor:  '))
+    
+    elif escolha == 5:
+        print ('Finalizando...')
+        
+    else:
+        print ('Opção inválida! Tente novamente.')
+    print ('=-=' * 10)
+    sleep (2)
+        
+print ('Fim do programa. Volte sempre!')
+
+
