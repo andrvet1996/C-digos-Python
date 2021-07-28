@@ -524,4 +524,22 @@ while escolha != 6:#5 é para parar o programa
         
 print ('Fim do programa. Volte sempre!')
 
+       
+#Desafio 60-
+'''from math import factorial
+num = int (input ('Digite um número para saber o fatorial: '))
+f = factorial (num)
+print (' O fatorial de {} é {].'.format (num, f))'''
+
+#outra forma
+n = int (input ('Digite um número para saber o fatorial: '))
+c = n # o fatorial de 5! é 1x2x3x4x5
+f = 1 #fator nulo de multiplicação
+print ('Calculando {}! = '.format (n), end ='')
+while c > 0:
+    print ('{}'.format (c), end ='')
+    print (' x ' if c > 1 else ' = ', end ='') #imprime o sinal de x e imprimi = quando acaba
+    f = f * c # f *= c 3! = 1 (c-2) . 2 (c-1). 3 (c)
+    c = c - 1 # c -= 1
+print ('{}'.format (f))
 
