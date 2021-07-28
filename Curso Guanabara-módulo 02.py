@@ -543,3 +543,18 @@ while c > 0:
     c = c - 1 # c -= 1
 print ('{}'.format (f))
 
+#Desafio 61-PA com estrutura while
+print ('=-=' * 8)
+print ('Programa gerador de PA')
+print ('=-=' * 8)
+primeiro = int (input('Primeiro termo: '))
+razão  = int (input ('Razão da PA: '))
+termo = primeiro #começa com o primeiro
+último = int (input('Último termo: '))
+cont = 1#conta os termos
+while cont <= último:
+    print ('{} > '.format (termo),end ='')# retiro o final da linha com end = ''
+    termo = termo + razão
+    cont += 1 # cont = cont + 1
+print ('FIM')
+
