@@ -558,3 +558,26 @@ while cont <= último:
     cont += 1 # cont = cont + 1
 print ('FIM')
 
+#Desafio 62-Super PA
+print ('=-=' * 8)
+print ('Programa gerador de PA')
+print ('=-=' * 8)
+primeiro = int(input('Primeiro termo: '))
+razão  = int(input ('Razão da PA: '))
+termo = primeiro #começa com o primeiro
+cont = 1#conta os termos
+total = 0#super PA
+mais = 10#super PA quantos termos a mais vc quer, além dos 10
+
+while mais != 0:
+    total = total + mais
+    while cont <= total:
+        print ('{} > '.format (termo),end ='')# retiro o final da linha com end = ''
+        termo = termo + razão
+        cont += 1 # cont = cont + 1
+    print ('PAUSA')#esse bloco faz com 10
+
+    mais = int(input('Quantos termos você quer mostrar a mais? '))#a partir daqui acrescenta números
+    print ('Progressão finalizada com {} termos mostrados'.format (total))
+
+print ('FIM')
