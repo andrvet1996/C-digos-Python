@@ -30,3 +30,39 @@ if soma % 2 == 0:
 else:
     print ('Pelo menos um dos números é ímpar e a soma é {}.'.format (soma))
     
+       
+#Exercício 3.17
+print ('=-=' * 9)
+print ('CONTRIBUIÇÃO PARA O INSS')
+print ('=-=' * 9)
+print ('''Salário de até R$1.040,22 = alíquota 8%
+Salário de até R$1.040,23 a R$1.733,70 = alíquota 9%
+Salário de até R$1.733,71 a R$3.467,40 = alíquota 11%
+Salário de R$3.467,40 = valor fixo de R$381,41''')
+salário = float(input('Digite seu salário: R$'))
+
+if salário <= 1040.22:
+    desc = 0.08 * salário
+    saláriodesc = salário - desc
+    print ('O desconto é de R${:.2f} e o seu salário, com desconto, é R${:.2f}.'.format (desc, saláriodesc))
+    
+elif salário > 1040.22 and salário <= 1733.70:
+    desc = 0.09 * salário
+    saláriodesc = salário - desc
+    print ('O desconto é de R${:.2f} e o seu salário, com desconto, é R${:.2f}.'.format (desc, saláriodesc))
+    
+elif salário > 1733.70 and salário <= 3467.40:
+    desc = 0.10 * salário
+    saláriodesc = salário - desc
+    print ('O desconto é de R${:.2f} e o seu salário, com desconto, é R${:.2f}.'.format (desc, saláriodesc))
+    
+else:
+    desc = 381.41
+    saláriodesc = salário - 381.41
+    print ('O desconto é de R${:.2f} e o seu salário, com desconto, é R${:.2f}.'.format (desc, saláriodesc))
+    
+print ('Obrigado por consultar o nosso site. Volte sempre!')
+    
+    
+
+  
