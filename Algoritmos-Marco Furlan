@@ -63,6 +63,36 @@ else:
     
 print ('Obrigado por consultar o nosso site. Volte sempre!')
     
-    
+#Exercício 3.17    
+print('*' * 20)
+print('CALCULADORA DA MÉDIA')
+print('*' * 20)
+
+somaprova = 0
+somatrabalho = 0
+for prova in range(1, 5):
+    prova = float(input('Digite a nota da P{}: '.format(prova)))
+    somaprova += prova
+médiaprova = somaprova / 4
+print('*' * 20)
+print('Média das provas = {:.2f}'.format(médiaprova))
+print('*' * 20)
+
+for trabalho in range(1, 5):
+    trabalho = float(input('Digite a nota do T{}: '.format(trabalho)))
+    somatrabalho += trabalho
+médiatrabalho = somatrabalho / 4
+print('*' * 20)
+print('Média dos trabalhos = {:.2f}'.format(médiatrabalho))
+print('*' * 20)
+
+médiafinal = (0.8 * médiaprova) + (0.2 * médiatrabalho)
+print('Sua média final é {:.2f}.'.format(médiafinal))
+
+if médiafinal >= 6.0:
+    print('Você foi aprovado!')
+else:
+    print('Você foi reprovado.')
+
 
   
