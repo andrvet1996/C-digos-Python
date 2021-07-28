@@ -579,5 +579,24 @@ while mais != 0:
 
     mais = int(input('Quantos termos você quer mostrar a mais? '))#a partir daqui acrescenta números
     print ('Progressão finalizada com {} termos mostrados'.format (total))
-
 print ('FIM')
+
+       
+#Desafio 63-sequencia de Fibonacci
+print ('#' * 22)
+print ('Sequência de Fibonacci')
+print ('#' * 22)
+
+n = int(input('Quantos termos você quer mostrar: '))
+t1 = 0
+t2 = 1
+print ('{} > {}'.format (t1, t2), end='')
+cont = 3
+while cont <= n:# repete o núemro de vezes n
+    t3 = t1 + t2
+    print (' > {}'.format (t3), end='')
+    t1 = t2 # t1 passa ser o t2 
+    t2 = t3 # t2 passa ser t3
+    cont  += 1
+print (' > FIM')
+print ('#' * 22)
