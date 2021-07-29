@@ -600,3 +600,30 @@ while cont <= n:# repete o núemro de vezes n
     cont  += 1
 print (' > FIM')
 print ('#' * 22)
+
+
+ #Desafio 64 tratando varios valores
+#pode se fazer cont = soma = n = 0
+cont = 0
+soma = 0
+n = 0
+while n!= 999:
+    n = int(input('Digite um número [999 para parar]: '))
+    soma += n
+    cont += 1
+    if n == 999:
+        print ('FIM')
+print ('#' * 45)
+print ('Você digitou {} números e soma entre eles é {}.'.format (cont - 1, soma - 999))
+print ('#' * 45)
+
+'''#solução Guanabara para evitar problemas para não considerar 0 999
+cont = soma = n = 0
+n = int(input('Digite um número [999 para parar]: '))
+while n!= 999:
+    soma += n
+    cont += 1
+    n = int(input('Digite um número [999 para parar]: '))
+print ('#' * 45)
+print ('Você digitou {} números e soma entre eles é {}.'.format (cont, soma))
+print ('#' * 45)'''
