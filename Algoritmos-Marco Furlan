@@ -95,4 +95,14 @@ else:
     print('Você foi reprovado.')
 
 
-  
+ #Exercício 3.36
+cont = 0
+soma = 0
+c = 3
+for x in range(0, 50):#mostrará 50 termos com o x de 0 a 50
+    c = 3 + (2 * x)
+    termo = 2 * c / (x + c)
+    cont += 1
+    soma += termo
+    print('O  {}º termo é = {:.3f}'.format(cont, termo))
+print(' A soma dos termos é {:.2f}.'.format(soma))
