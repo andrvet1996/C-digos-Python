@@ -106,3 +106,18 @@ for x in range(0, 50):#mostrará 50 termos com o x de 0 a 50
     soma += termo
     print('O  {}º termo é = {:.3f}'.format(cont, termo))
 print(' A soma dos termos é {:.2f}.'.format(soma))
+
+
+#Exercício 3.23-números tringulares
+print ('=-=' * 16)
+print ('VERIFICADOR DE NÚMEROS TRIANGULARES DE 0 a 1000')
+print ('=-=' * 16)
+n = int(input('Esse número é triangular? '))
+
+for x in range (2, 12):
+    triangular = (x - 1) * x * (x + 1)
+    if n / triangular == 1:
+        print ('{} é um número TRIANGULAR!.'.format (n))
+    
+print ( 'FIM')
+
