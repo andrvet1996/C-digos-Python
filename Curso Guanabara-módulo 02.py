@@ -627,3 +627,25 @@ while n!= 999:
 print ('#' * 45)
 print ('Você digitou {} números e soma entre eles é {}.'.format (cont, soma))
 print ('#' * 45)'''
+
+#Desafio 65
+resp = 'S'
+média = qtde = soma = maior = menor = 0#pode escrever separado
+
+while resp in 'Ss':  # pode usar s maiúsculo ou minúsculo
+    num = int(input('Digite um número: '))
+    soma += num
+    qtde += 1
+    if qtde == 1:# no primero numero que vc digitou
+        maior = menor = num
+    else:
+        if num > maior: # se o numero recém digitado for maior que o maior que já tinha sido digitado
+            maior = num
+        if num < menor: # o contrário
+            menor = num
+    resp = str(input('Quer continuar? [S/N]: ')).upper().strip()[0]# [0] considera só a primeira letra
+
+média = soma / qtde
+print('Você digitou {} números e a média foi {:.2f}.'. format (qtde, média))
+print ('O maior valor foi {} e o menor foi {}.'.format (maior, menor))
+print('Acabou')
