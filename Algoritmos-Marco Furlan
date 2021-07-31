@@ -121,3 +121,18 @@ for x in range (2, 12):
     
 print ( 'FIM')
 
+
+# Exercíco 3.28
+n = somaquad = cont = somaraiz = 0
+from math import sqrt
+
+while True:  # crio o looping que vou interromper depois
+    n = int(input('Digite um número: [Digite 999 para FIM]:  '))
+    if n == 999:  # o 999 não será somado
+        break  # parada
+    cont += 1
+    somaquad += n ** 2
+    somaraiz += sqrt(n)
+# print ('A soma vale {}.'.format (soma))
+print(f'Você digitou {cont} números e a soma dos quadrados é {somaquad}.')  # f strings'''
+print(f'A soma das raizes quadradas dos números digitados é {somaraiz:.2f}.')
