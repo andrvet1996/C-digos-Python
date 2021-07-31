@@ -680,3 +680,14 @@ idade = 45
 salário = 965.6
 print(f'Meu nome é {nome}, tenho {idade} e ganho R${salário:.2f}.')
 
+       
+ #Desafio 66
+cont = soma = 0
+while True:
+    n = int(input('Digite um número (999 para parar): '))
+    if n == 999:
+        break
+    cont += 1
+    soma += n
+#print (f' A soma dos {cont} digitados é {soma}.)
+print ('A soma dos {} números digitados é {}.'.format (cont, soma))
