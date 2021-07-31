@@ -704,3 +704,36 @@ while True:
         prod = c * n
         #print('{} x  {} = {} '.format(c, n, prod))
         print(f'{c} * {n} = {prod}')
+       
+# Desafio 68-par ou ímpar
+from random import randint
+contvitoria = 0
+
+while True:
+    n = int(input('Digite um número de 1 a 10:  '))
+    comput = randint(0, 10)
+    res = n + comput
+    tipo = ' '  # par ou impar
+    while tipo not in 'PI':
+        tipo = str(input('Par ou ímpar: [P/I]: ')).strip().upper()[0]
+    print('Você jogou {} e o computador {}. O total é {}.'.format(n, comput, res))
+
+    if tipo == 'P':
+        if res % 2 == 0:
+            print('Você VENCEU!')
+            contvitoria += 1
+        else:
+            print('Você PERDEU')
+            break #parada derrota
+
+    elif tipo == 'I':
+        if res % 2 == 1:
+            print('Você VENCEU!')
+            contvitoria += 1
+        else:
+            print('Você PERDEU!')
+            break
+
+    print('Vamos jogar novamente...')
+
+print('GAME OVER! Você venceu {} vezes.'.format(contvitoria))
