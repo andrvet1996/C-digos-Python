@@ -649,3 +649,34 @@ média = soma / qtde
 print('Você digitou {} números e a média foi {:.2f}.'. format (qtde, média))
 print ('O maior valor foi {} e o menor foi {}.'.format (maior, menor))
 print('Acabou')
+
+       
+# aula 15-interrompendo repetições
+
+'''cont = 1
+while True:
+    print (cont, '->', end='')
+    cont += 1
+print ('acabou')'''  # looping infinito
+
+'''n = soma = 0
+while n != 999:#999 é um flag ponto de parada
+    n = int(input('Digite um número: '))
+    soma += n
+print ('A soma vale {}.'.format (soma))'''
+
+# fazer o de cima sem gambiarra
+'''n = soma = 0
+while True:
+    n = int(input('Digite um número: '))
+    if n == 999:  # o 999 não será somado
+        break
+    soma += n
+# print ('A soma vale {}.'.format (soma))
+print(f'A soma vale {soma}')  # f strings'''
+
+nome = 'André'
+idade = 45
+salário = 965.6
+print(f'Meu nome é {nome}, tenho {idade} e ganho R${salário:.2f}.')
+
