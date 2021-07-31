@@ -691,3 +691,16 @@ while True:
     soma += n
 #print (f' A soma dos {cont} digitados é {soma}.)
 print ('A soma dos {} números digitados é {}.'.format (cont, soma))
+
+#Desafio 67-tabuada de va´rios números       
+n = 0
+while True:
+    print('*' * 72)
+    n = int(input('Quer ver a tabuada de qual valor (qualquer nº negativo para parar)?  '))
+    print('*' * 72)
+    if n < 0:
+        break
+    for c in range(1, 11):
+        prod = c * n
+        #print('{} x  {} = {} '.format(c, n, prod))
+        print(f'{c} * {n} = {prod}')
