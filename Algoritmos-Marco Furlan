@@ -136,3 +136,12 @@ while True:  # crio o looping que vou interromper depois
 # print ('A soma vale {}.'.format (soma))
 print(f'Você digitou {cont} números e a soma dos quadrados é {somaquad}.')  # f strings'''
 print(f'A soma das raizes quadradas dos números digitados é {somaraiz:.2f}.')
+
+#Exercício 3.32
+from random import randint
+n = int(input('Digite um número: '))
+soma = 0
+for c in range (1, n + 1):
+    soma += c
+print ('A soma dos números é {}.'.format (soma))
+#print (f'A soma dos {cont} números é {soma}')
