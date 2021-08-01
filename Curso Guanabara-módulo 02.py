@@ -737,3 +737,32 @@ while True:
     print('Vamos jogar novamente...')
 
 print('GAME OVER! Você venceu {} vezes.'.format(contvitoria))
+       
+#Desafio 70
+       
+tot18 = tothomem = totmulher20 = 0
+while True:
+    print('-' * 20)
+    print('CADASTRE UMA PESSOA')
+    print('-' * 20)
+    idade = int(input('Idade: '))
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Sexo [M/F]: ')).strip().upper()[0]
+    if idade >= 18:
+        tot18 += 1
+    if sexo == 'M':
+        tothomem += 1
+    if sexo == 'F' and idade < 20:
+        totmulher20 += 1
+    print('-' * 20)
+    resposta = ' '
+    while resposta not in 'SN':
+        resposta = str(input('Quer continuar [S/N]: ')).strip().upper()[0]
+    if resposta == 'N':
+        break
+    print('-' * 20)
+print('Total de pessoas com mais de 18 anos: {}'.format(tot18))
+print('Total de homens: {}'.format(tothomem))
+print('E temos {} mulher(-es) com menos de 20 anos'.format(totmulher20))
+
