@@ -766,3 +766,31 @@ print('Total de pessoas com mais de 18 anos: {}'.format(tot18))
 print('Total de homens: {}'.format(tothomem))
 print('E temos {} mulher(-es) com menos de 20 anos'.format(totmulher20))
 
+       
+Desafio 70-estatística de produto
+print('=-=' * 6)
+print('LOJA SUPER BARATÃO')
+print('=-=' * 6)
+total = tot1000 = menor = cont = 0
+barato = ' ' #nome do poduto mais barato
+while True:
+    prod = str(input('Nome do produto: '))
+    preço = float(input('Preço: R$'))
+    cont += 1
+    total += preço
+    if preço < 1000:
+        tot1000 += 1
+    if cont == 1 or preço < menor: #menor preço for primeiro prod cont == 1
+        menor = preço
+        barato = prod
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar?[S/N]: ')).strip().upper()[0]
+    if resp == 'N':
+        break
+
+print('{:-^40}'.format('FIM DO PROGRAMA'))  # centraliza com 40 espaços
+print(f'O total da compra foi de R$ {total:.2f}.')
+print(f'{tot1000} itens custaram mais de R$ 1000.00.')
+print(f'O produto mais barato foi {barato} e custa R$ {menor:.2f}.')
+
