@@ -793,4 +793,59 @@ print('{:-^40}'.format('FIM DO PROGRAMA'))  # centraliza com 40 espaços
 print(f'O total da compra foi de R$ {total:.2f}.')
 print(f'{tot1000} itens custaram mais de R$ 1000.00.')
 print(f'O produto mais barato foi {barato} e custa R$ {menor:.2f}.')
+       
+       
+#Desafio 45-Game pedra papel e tesoura
+from random import randint
+from time import sleep
+itens = ('Pedra', 'Papel', 'Tesoura')
+print ('''Sua opções:
+[0] PEDRA
+[1] PAPEL
+[2] TESOURA''')
+
+computador = randint (0,2)
+jogador = int(input('Qual sua jogada?' ))
+
+print('JO')
+sleep(1)
+print ('KEN')
+sleep(1)
+print ('PO!!!')
+sleep(1)
+
+print ('=-=' *11)
+print ('Computador jogou {}.'.format(itens[computador]))#faz para converter o número nno item
+print ('Jogador jogou {}.'.format (itens[jogador]))
+print ('=-=' *11)
+
+if computador == 0:
+    if jogador == 0:
+        print('Empate!')
+    elif jogador == 1:
+        print('O jogador vence!')
+    elif jogador == 2:
+        print('O computador vence!')
+    else:
+        print ('Jogada inválida!')
+        
+elif computador == 1:
+    if jogador == 0:
+        print('Empate!')
+    elif jogador == 1:
+        print('O jogador vence!')
+    elif jogador == 2:
+        print('O computador vence!')
+    else:
+        print ('Jogada inválida!')
+    
+elif computador == 2:
+    if jogador == 0:
+        print('Empate!')
+    elif jogador == 1:
+        print('O jogador vence!')
+    elif jogador == 2:
+        print('O computador vence!')
+    else:
+        print ('Jogada inválida!')
 
