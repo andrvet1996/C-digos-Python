@@ -157,3 +157,14 @@ for c in range (1, n + 1):
     termo = 1 / denominador
     soma += termo
 print ('A soma dos {} termos é igual a {:.2f}.'.format (contermo, soma))
+
+
+#Exercício 3.42
+print('=' * 30)
+print('{:^30}'.format('CALCULADORA DE JUROS'))  # comando para centralizar
+print('=' * 30)
+juros = float(input('Taxa de juros (%): '))
+inicial = float(input('Valor inicial aplicado: R$'))
+tempo = int(input('Tempo de aplicação em meses: '))
+final = ((1 + (juros / 100)) ** tempo) * inicial
+print(f'O valor final após {tempo} meses é de R${final:.2f}.')
