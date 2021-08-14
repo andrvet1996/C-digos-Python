@@ -50,3 +50,23 @@ while True:
     
 print ('Você digitou o número {}.'.format (cont[núm]))
 #print (f'Você digitou o número {cont[núm]})
+
+
+#Desafio 73-Tuplas com times
+times = ('Atlético-MG','Palmeiras','Fortaleza','RB Bragantino','Flamengo','Athletico-PR',	
+'Ceará','Santos','Atlético-GO','Bahia','Internacional','Corinthians','Fluminense',
+'Juventude','Sport','São Paulo','América-MG','Cuiabá','Grêmio','Chapecoense')
+
+print('=-='*39)
+print ('Lista de times do Brasileirão: {}.'.format(times))
+print('=-='*39)
+ 
+print ('Os 5 primeiros colocados são: {}.'.format(times[0:5]))
+print ('=-='*20)
+print ('Os últimos 4 colocados são: {}.'.format(times[16:20]))# ou [-4:0]
+print ('=-='*20)
+print ('Os times em orde alfabética são: {}.'.format(sorted(times)))
+print ('=-='*11)
+print ('O Chapecoense está na {}ª posição.'. format(times.index('Chapecoense') + 1))#index para encontrar um termo + 1 posiçao real
+#print(f'O Chapecoense está na {times.index("Chapecoense")+ 1}ª posição')
+print ('=-='*11)
