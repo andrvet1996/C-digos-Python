@@ -70,3 +70,14 @@ print ('=-='*11)
 print ('O Chapecoense está na {}ª posição.'. format(times.index('Chapecoense') + 1))#index para encontrar um termo + 1 posiçao real
 #print(f'O Chapecoense está na {times.index("Chapecoense")+ 1}ª posição')
 print ('=-='*11)
+
+
+#Desafio 74-maior e menor número em tuplas
+from random import randint
+sorteados = (randint(1,10), randint(1,10), randint(1,10),randint(1,10), randint(1,10))#gera tupla
+print ('Os valores sorteados foram: ', end = '')
+for n in sorteados:#imprimi os valor fora da tupla
+    print ('{} '.format (n), end = '')
+    
+print ('\nO maior valor sorteado foi {}.'.format (max(sorteados)))#max método para tupla \n pula linha
+print ('O menor valor sorteado foi {}.'.format (min(sorteados)))
