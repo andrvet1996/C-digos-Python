@@ -99,3 +99,25 @@ print ('Os valores pares digitados foram ' , end = '')
 for n in núm:
     if n % 2 == 0:
         print (n, end = '')
+        
+        
+#Exercício 76-lista de preços com tuplas
+print('=' * 40)
+print('{:^40}'.format('LISTAGEM DE PREÇOS'))  # comando para centralizar
+print('=' * 40)
+
+listagem = ('Lápis', '1.75',
+            'Borracha', '2.00',
+            'Caderno', '15.90',
+            'Estojo', '25.00',
+            'Transferidor', '4.20',
+            'Compasso', '9.99',
+            'Mochila', '120.32',
+            'Canetas', '22.30',
+            'Livro', '34.90')
+for posição in range (0, len(listagem)):
+    if posição % 2 == 0: #observe que os produtos estão na posição par
+        print(f'{listagem[posição]:.<30}', end='')#alinhado a esquerda com pontos não pular linha com o preço
+    else:
+        print(f'R${listagem[posição]:>7}')
+print('=' * 40)
