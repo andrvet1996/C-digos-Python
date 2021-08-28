@@ -121,3 +121,14 @@ for posição in range (0, len(listagem)):
     else:
         print(f'R${listagem[posição]:>7}')
 print('=' * 40)
+
+#Desafio 77-contar vogal na tupla
+palavras = ('APRENDER', 'PROGRAMAR', 'LINGUAGEM'
+'PYTHON', 'CURSO', 'GRATIS', 'ESTUDAR', 'PRATICAR', 
+'TRABALHAR', 'MERCADO', 'PROGRAMADOR', 'FUTURO')
+
+for p in palavras:
+    print ('\nNa palavra {} temos '.format (p), end = '')
+    for letra in p:
+        if letra.upper() in 'AEIOU':
+            print (letra, end = '')
