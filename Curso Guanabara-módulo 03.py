@@ -210,3 +210,24 @@ for i, v in enumerate(listnum):
     if v == menor:
         print(f'{i}...', end='')
 print()
+
+
+# Desafio 79-valores únicos em uma lista
+
+números = list()
+while True:
+    n = int(input('Digite um valor: '))
+    if n not in números:
+        números.append(n)
+        print('Adicionado com sucesso!')
+    else:
+        print('Valor duplicado! Não será adicionado.')
+
+    resposta = str(input('Quer continuar? [S/N]: ')).upper().strip()
+    if resposta in 'N':
+        break
+    print('Digite novamente sua opção')
+print('=-' * 30)
+números.sort()
+print('Você digitou os valores {}.'.format(números))
+print('=-' * 30)
