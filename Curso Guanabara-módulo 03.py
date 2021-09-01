@@ -132,3 +132,24 @@ for p in palavras:
     for letra in p:
         if letra.upper() in 'AEIOU':
             print (letra, end = '')
+            
+            
+AULA 17-LISTAS
+
+#Aula 17 LISTAS
+#num = (2,5,9,1)#tupla
+#num [2] = 3
+#print (num)
+
+num = [2,9,5,1,9]
+#num [2] = 0#mudou o elemento da posição 2
+#num.append (7)#estou adicionando o valor 100
+#num.sort ()#ordena
+#num.sort (reverse=True)#ordena reverso
+#print(num)
+#num.insert (2,1000)#inseri o valor 1000 na posição 2
+#num.pop()#deleta o último valor
+num.remove (9)#remove um valor numérico em sua primeira ocorrência
+print (num)
+print ('Essa lista tem {} elementos.'.format(len (num)))
+#print (f'Essa lista tem {len(num)} elementos.')
