@@ -136,12 +136,11 @@ for p in palavras:
             
 AULA 17-LISTAS
 
-#Aula 17 LISTAS
 #num = (2,5,9,1)#tupla
 #num [2] = 3
 #print (num)
 
-num = [2,9,5,1,9]
+#num = [2,9,5,1,9]
 #num [2] = 0#mudou o elemento da posição 2
 #num.append (7)#estou adicionando o valor 100
 #num.sort ()#ordena
@@ -149,7 +148,12 @@ num = [2,9,5,1,9]
 #print(num)
 #num.insert (2,1000)#inseri o valor 1000 na posição 2
 #num.pop()#deleta o último valor
-num.remove (9)#remove um valor numérico em sua primeira ocorrência
-print (num)
+#num.remove (9)#remove um valor numérico em sua primeira ocorrência
+#if 100 in num:#consulta se o número está na lista
+    num.remove (100)
+else:
+     print ('O número não existe na lista.')
+    
+#print (num)
 print ('Essa lista tem {} elementos.'.format(len (num)))
 #print (f'Essa lista tem {len(num)} elementos.')
