@@ -157,3 +157,28 @@ else:
 #print (num)
 print ('Essa lista tem {} elementos.'.format(len (num)))
 #print (f'Essa lista tem {len(num)} elementos.')
+
+#valores = list()
+#valores.append (1)
+#valores.append (1000)
+#valores.append (3)
+
+#for v in valores:
+    #print (f' {} ...', end = '')#não pula linha
+    #print ('{} ...'.format(v), end = '')
+    
+#for c, v in enumerate (valores):
+    #print ('Na posição {} encontrei o valor {}.'.format (c,v))
+#print ('Cheguei ao final da lista.')
+
+#valores = list()
+#for cont in range (0, 5):#incluir valores na lista
+    #valores.append (int(input('Digite um valor: ')))
+#print ('A lista de números é: {}.'.format (valores))
+
+a = [1, 23, 12, 100]
+#b = a # as duas listas estão ligadas
+b = a[:] #b recebe todos os elementos de a, isso é uma COPIA
+b [2] = 8
+print ('Lista A: {}.'.format(a))
+print ('Lista B: {}.'.format (b))
