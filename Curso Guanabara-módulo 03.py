@@ -182,3 +182,31 @@ b = a[:] #b recebe todos os elementos de a, isso é uma COPIA
 b [2] = 8
 print ('Lista A: {}.'.format(a))
 print ('Lista B: {}.'.format (b))
+
+
+#Desafio 78-maior e menor valor em lista
+listnum = []
+maior = 0
+menor = 0
+for c in range(0, 5):
+    listnum.append(int(input('Digite um valor para a posição {}: '.format(c)))),
+    if c == 0:
+        maior = menor = listnum[c]#vc digitou um número somente ele é o maior e o menor
+    else:
+        if listnum[c] > maior:
+            maior = listnum[c]
+        if listnum[c] < menor:
+            menor = listnum[c]
+
+print('=-' * 30)
+print(f'Você digitou os valores {listnum}')
+print(f'O maior valor foi {maior}, nas posições .', end='')
+for i, v in enumerate(listnum):
+    if v == maior:
+        print(f'{i}...', end='')
+print ()
+print(f'O menor valor foi {menor}, nas posições .', end='')
+for i, v in enumerate(listnum):
+    if v == menor:
+        print(f'{i}...', end='')
+print()
