@@ -231,3 +231,20 @@ print('=-' * 30)
 números.sort()
 print('Você digitou os valores {}.'.format(números))
 print('=-' * 30)
+
+
+#Desafio 81-Extraindo dados de uma lista
+lista = []
+while True:
+    lista.append(int(input('Digite um número: ')))
+    resposta = str(input('Quer continuar?[S/N]: ')).upper().strip()
+    if resposta in 'N':
+        break
+print('=-' * 30)
+print('Você digitou {} números.'.format(len(lista)))
+lista.sort(reverse=True)
+print(f'Os valores em ordem decrescente são {lista}.')
+if 5 in lista:
+    print('O valor 5 faz parte da lista.')
+else:
+    print('O valor 5 não faz parte da lista.')
