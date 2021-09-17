@@ -309,3 +309,59 @@ if len (pilha) == 0:
 else:
     print ('Sua expressão está errada!')
     
+    
+    
+#AULA 18-LISTAS 
+
+'''pessoas = [['André', 45],['Letícia', 8], ['Enrico', 5]]
+print(pessoas[0][0])#André
+print(pessoas[0][1])
+print(pessoas[2][1])
+print(pessoas[2])
+
+teste = []
+teste.append('André')
+teste.append(40)
+galera = []
+galera.append(teste[:])
+#galera.append(teste)se deixar assim ele repetirá a lista [['Maria', 22], ['Maria', 22]]
+teste[0] = 'Maria'
+teste[1] = 22
+#galera.append(teste)
+galera.append(teste[:])
+print(teste)
+print(galera)'''
+
+'''galera = [['Gustavo', 11], ['André', 45], ['Lúcia', 23], ['Geni', 70]]
+print(galera[0])
+print(galera[0][0])
+print(galera[3][1])
+print (galera[2][1])
+
+for p in galera:
+    print(p)#printa sub-listas
+    print(p[0])#só nomes
+    print(p[1])#só idades
+    print ('{} tem {} anos de idade.'.format(p[0],p[1]))
+    #print (f'{p[0]} tem {p[1]} anos de idade} anos de idade.')'''
+    
+galera = list()
+dado = list()
+totmaior = totmenor = 0
+for c in range (0,3):
+    dado.append(str(input('Nome: ')))
+    dado.append(int(input('Idade: ')))
+    galera.append(dado[:])
+    dado.clear()#apagar os dados da lista dados
+    
+#print(galera)
+
+for p in galera:
+    if p[1] >= 21:
+        print('{} é maior de idade.'.format(p[0]))
+        totmaior += 1
+    else:
+        print('{} é menor de idade.'.format(p[0]))
+        totmenor += 1
+      
+print ('Temos {} pessoas maiores e {} menores de idade.'.format(totmaior, totmenor))
