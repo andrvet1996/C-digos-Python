@@ -1,0 +1,28 @@
+#LISTA 1
+'''a = '1'
+b = 5.9
+c = 'teste'
+type (a)
+type (b)
+type (c)
+print(type(a))
+print(type(b))
+print(type(c))'''
+
+lista = [2,5,7,9,0,1,4,8,6]
+#lista.append(6)
+#lista.insert(2,7)
+#lista.remove (0) 
+#lista.append (4)
+#print(lista.count(1))
+#print(lista)
+#print(lista[0:3])
+#print(lista[2:7])
+#print(lista[0:9:3])
+#print(lista[-3:])
+#print(lista[:-4])
+#print(lista[5])
+#lista.insert(6,12)
+#lista.reverse()
+lista.sort()
+print(lista)
