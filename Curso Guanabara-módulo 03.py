@@ -397,4 +397,25 @@ print(F'O menor peso foi de {menor} Kg. Peso de', end='')
 for p in princ:
     if p[1] == menor:
         print(f'[{p[0]}]', end='')
+        
+        
+#Exercício 85-lista com pares e ímpares
+núm = [[],[]]
+valor = 0
+for c in range (0,7):
+    c += 1
+    valor = int(input('Digite número {}º valor: '.format(c)))
+    if valor % 2 == 0:
+        núm[0].append(valor)
+    else:
+        núm[1].append(valor)
+        
+print('=-' * 40)
+#print('Todos os valores são {}.'.format(núm))
+núm[0].sort()#ordena os pares
+núm[1].sort()#ordena os ímpares
+print('Os valores pares digitados foram {}.'.format(núm[0]))
+print('Os valores ímpares digitados foram {}'.format(núm[1]))
+
+  
 
