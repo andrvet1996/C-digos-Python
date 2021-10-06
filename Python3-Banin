@@ -8,3 +8,28 @@ d = (((x1 - x2) ** 2) + ((y1 - y2) ** 2)) ** 0.5
 print('A distância entre os pontos (x1, x2) e (y1, y2) é de {:.3f}. '.format(d))
 
 
+#Exercício 10
+print('=-' * 23)
+print('             LISTA DE PRODUTOS         ')
+print('=-' * 23)
+
+lista = ('''Boneco Malandrinho, valor unitário R$18.50
+Spinner Pequeno, valor unitário R$12.00
+Cubo Mágico, valor unitário R$5.90''')
+print(lista)
+print('=-' * 23)
+
+b = int(input('Quantos Bonecos Malandrinhos foram vendidos? '))
+s = int(input('Quantos Spinner Pequeno foram vendidos? '))
+c = int(input('Quantos Cubos Mágico foram vendidos? '))
+
+fatb = b * 18.50
+fats = s * 12.00
+fatc = c * 5.90
+
+ftotal = fatb + fats + fatc
+
+print('O faturamento total foi de R${:.2f}.'.format(ftotal))
+
+
+
