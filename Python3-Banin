@@ -31,5 +31,29 @@ ftotal = fatb + fats + fatc
 
 print('O faturamento total foi de R${:.2f}.'.format(ftotal))
 
+#Exercício 8
+while True:
+    lutador = str(input('Nome do lutador: '))
+    peso = float(input('Peso do lutador (Kg): '))
+    resposta = str(input('Quer inserir outro lutador [S/N]: ')).upper()
+    if peso < 65:
+        categoria = ('Peso Pena')
+    elif 65 <= peso < 72:
+        categoria = ('Peso Leve')
+    elif 72 <= peso < 79:
+        categoria = ('Peso Ligeiro')
+    elif 79 <= peso < 86:
+        categoria = ('Peso Meio-Médio')
+    elif 86 <= peso < 93:
+        categoria('Peso Médio')
+    elif 93 <= peso < 100:
+        categoria = ('Peso Meio-pesado')
+    else:
+        categoria = ('Peso Pesado')
+    if resposta in 'S':
+        print(f'O lutador {lutador} pesa {peso} e pertence a categoria {categoria}.')
+    else:
+        break
+print(f'O lutador {lutador} pesa {peso} e pertence a categoria {categoria}.')
 
 
