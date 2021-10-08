@@ -1,0 +1,46 @@
+print('*=' * 23)
+print('''CÁLCULO DA MÉDIA
+Média das atividades diversificadas (peso 7)
+Média das provas (peso 9)
+Atitudinal (de 0 a 2)''')
+print('*=' * 23)
+
+a = p = 0
+atividade = []
+prova = []
+while True:
+    a += 1
+    ativ = int(input('Digite a nota da atividade {}: '.format(a)))
+    resp = str(input('Você que acrescentar mais atividades [S/N]?  ')).upper()
+    atividade.append(ativ)
+    if resp in 'N':
+        break
+    
+def somalista(atividade):
+   if len(atividade) == 1:
+        return atividade[0]
+   else:
+        return atividade[0] + somalista(atividade[1:])
+
+while True:
+    p += 1
+    prov = int(input('Digite a nota da prova {}: '.format(p)))
+    resp = str(input('Você quer acrescentar mais provas [S/N]? ')).upper()
+    prova.append(prov)
+    if resp in 'N':
+        break
+
+def somalista(prova):
+   if len(prova) == 1:
+        return prova[0]
+   else:
+        return prova[0] + somalista(prova[1:])
+
+atitudinal = int (input('Digite nota da avaliação atitudinal: ')) 
+
+média_final = ((((somalista(atividade) / a) * 7) + ((somalista(prova) / p) * 9)) / 20) + atitudinal
+
+print ('A sua média final foi{}.'.format (média_final))
+
+
+
