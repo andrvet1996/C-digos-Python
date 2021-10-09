@@ -56,4 +56,22 @@ while True:
         break
 print(f'O lutador {lutador} pesa {peso} e pertence a categoria {categoria}.')
 
+# Exercício 12
+soma = 0
+n = 0
+lista = []
+
+while True:
+    n = int(input('Digite um número: '))
+    resposta = str(input('Você quer continuar? [S/N]: ')).upper()
+    lista.append(n)
+    if n >= 0:
+        soma += n
+    if resposta not in 'N':
+        continue
+    break
+
+print(f'Você digitou {len(lista)} números e a soma dos positivos é = {soma}.')
+
+
 
