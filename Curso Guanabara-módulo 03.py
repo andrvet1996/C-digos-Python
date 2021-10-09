@@ -418,4 +418,16 @@ print('Os valores pares digitados foram {}.'.format(núm[0]))
 print('Os valores ímpares digitados foram {}'.format(núm[1]))
 
   
+# Desafio 86-criar matriz
+
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for l in range(0, 3):
+    for c in range(0, 3):
+        matriz[l][c] = int(input('Digite um valor para {}, {}: '.format(l, c)))
+print('=*' * 30)
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matriz[l][c]:^5}]', end='')
+    print()
+
 
