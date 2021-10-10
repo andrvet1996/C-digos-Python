@@ -458,3 +458,37 @@ for c in range(0,3):
         mai = matriz[l][c]
 
 print(f'O maior elemento da lista é o {mai}.')
+
+#AULA 19-DICIONÁRIO
+
+pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 22}
+#pessoas ['peso'] = 97.8 adiciona peso
+#pessoas['nome']='Leandro' troca nome
+print(pessoas)
+print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos.')#aspas duplas para não dar erro
+print(pessoas.keys())
+print(pessoas.items())
+pessoas['nome']='Leandro'
+#del pessoas['sexo'] apaga sexo
+for k, v in pessoas.items():
+    print(f'{k}={v}')
+
+#criando dicionário em uma lista
+brasil = []
+estado1 = {'uf': 'Rio de Janeiro','sigla': 'RJ'}
+estado2 = {'uf': 'São Paulo', 'sigla':'SP'}
+brasil.append(estado1)
+brasil.append(estado2)
+print(brasil)
+
+estado = dict()
+brasil = []
+for c in range(0,3):
+    estado['uf'] = str(input('Unidade Federativa: '))
+    estado['sigla'] = str(input('Sigla do estado: ')).upper()
+    brasil.append(estado.copy())#tem de botar o copy()
+print(brasil)
+for e in brasil:
+    for v in e.values():
+        print(v, end=' ')
+    print()
