@@ -1,3 +1,4 @@
+#MÉDIA FIEB
 print('*=' * 23)
 print('''CÁLCULO DA MÉDIA
 Média das atividades diversificadas (peso 7)
@@ -43,4 +44,23 @@ média_final = ((((somalista(atividade) / a) * 7) + ((somalista(prova) / p) * 9)
 print ('A sua média final foi{}.'.format (média_final))
 
 
+#AVALIAÇÃO MATEMÁTICA FUND 1
+from random import randint
+resp_certas = 0
+q = int(input('Número de testes: '))
+for i in range (0, q):
+    a = randint(0, 9)
+    b = randint(0, 9)
+    x = a + b
+    print('-=' * 12)
+    print('Qual o valor de {} + {}?'.format(a, b))
+    resp = int(input('Qual é a sua resposta? '))
+    if resp == x:
+        resp_certas += 1
+        print('Você acertou! Parabéns!')
+    if resp != x:
+        print('Você errou!')
+    print('-=' * 18)
+print('Você acertou {} questões e errou {}.'. format(resp_certas, (q - resp_certas)))
+print('-=' * 18)
 
