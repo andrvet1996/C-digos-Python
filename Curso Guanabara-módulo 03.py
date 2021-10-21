@@ -546,4 +546,19 @@ for e in brasil:
         print(v, end=' ')
     print()
     
+                     
+#Desafio 90-Dicionário em Python
+aluno = {}
+aluno['nome'] = str(input('Nome: '))
+aluno['média'] = float(input('Média de {}: '.format(aluno['nome'])))
+if aluno['média']>= 7:
+    aluno['situação'] = 'Aprovado'
+elif 5 <= aluno ['média'] <7:
+    aluno['situação'] = 'Recuperação'
+else:
+    aluno['situação'] = 'Reprovado'
+print('-=' * 30)
+    
+for k, v in aluno.items():
+    print(f'  -{k} é igual a {v})
 
