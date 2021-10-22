@@ -1,0 +1,90 @@
+#NUMPY
+
+import numpy as np
+dados=np.random.rand(2,3)
+print(dados)#gerar array
+
+print(dados.dtype)#tipo do array
+
+print(dados.shape)#tamanho e quantidade de dimensoes
+
+print(dados.ndim)#só dimensoes
+
+#CRIAR ARRAY
+lista=[1,2,5,7.8,1.25]
+dados2=np.array(lista)#cria array do numpy
+print(dados2)
+
+lista2=[[1,2,3,4],[4,3,2,1]]
+dados3=np.array(lista2)
+print(dados3)
+
+#OUTRAS FORMAS DE CRIAR ARRAY
+dadoszero=np.zeros(10)#lista de zeros
+print(dadoszero)
+
+dadoszero2=np.zeros((2,3))
+print(dadoszero2)
+
+dadosum=np.ones(5)#lista com so 1
+print(dadosum)
+
+dadosseq=np.arange(10)#lista de 0 a 9
+print(dadosseq)
+
+dadosseq2=np.arange(0,20,2)#cria arra de 0 a 20, pulando de 2 em 20
+print(dadosseq2)
+print(dadosseq2.dtype)
+
+dadosseqf=dadosseq.astype(np.float64)#transforma array de inteiro em float
+print(dadosseqf)
+
+#ARITMÉTICA COM ARRAY
+dados4=np.array([[1,2,3],[4,5,6]])
+print(dados4)
+print(dados4 * dados4)#eleva ao quadrado
+print(dados4 - dados4)
+print(1/dados4)
+
+dados5=dados4 + dados4
+print(dados5)
+
+#INDEXAÇÃO
+print(dadosseq[5])
+print(dadosseq[3:6])
+
+dadosseq[3:6]=20#sustitui 3 posiçoes por 20
+print(dadosseq)
+
+fatiadados=dadosseq[2:4]
+print(fatiadados)
+
+fatiadados=dados[1]=2000
+print(fatiadados)
+
+#COPIAR DADOS
+fatia2=dadosseq[2:4].copy()#o copy() não muda o array
+print(fatia2)
+
+fatia2[:]=111
+print(fatia2)
+
+#ARRAY COM MAIS DE UMA DIMENSÃO
+dados6=np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(dados6)
+print(dados4[1,2])
+
+#MASCARAS
+mascara=(dadosseq<100)
+print(mascara)
+
+dadosseq[dadosseq<20]=8888
+print(dadosseq)
+
+#TRANSPOSIÇÃO
+dados7=np.arange(15).reshape((3,5))
+print(dados7)
+print(dados7.T)#matriz transposta
+
+#MULTIPLICAÇAO MATRIZ POR DOTS
+np.dot(dados7.T,dados7)
