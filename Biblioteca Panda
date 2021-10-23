@@ -1,0 +1,44 @@
+#IMPORTAR BIBLIOTECAS
+import pandas as pd 
+import numpy as np
+
+'''#SERIES
+s1=pd.Series([1,2,-5,0])
+print(s1)
+
+print(s1.values)
+
+print(s1.index)
+
+s2=pd.Series([1,2,-5,0],index=['a','b','c','d'])#vc define índices
+print(s2)
+
+print(s2.index)
+
+s2['a']=1000
+print(s2)
+
+#COMPARAÇÃO
+s2[s2>0]
+print(s2[s2>0])
+
+#ALGEBRA
+print(s2 * 2)
+
+print(s2.isnull())'''
+
+#DATAFRAME
+dados={'estado':['SP','MG','PR','SP','MG','PR'],'ano':['2019','2019','2019','2020','2020','2020'],'pop':['45.9','21.1','16.9','46.6','21.4','17.3']}
+df1=pd.DataFrame(dados)
+print(df1)
+
+
+#VISUALIZAR PARTES DO DATAFRAME
+print(df1.head(2))#print das duas primeiras linhas
+
+print(df1.tail(2))#dois ultimos registros
+
+print(df1.sample(2))#pega dois valores aleatórios
+
+#NOVO DF A PARTIR DO ANTERIOR
+df2=pd.DataFrame(dados, columns=['ano','estado','pop'])#define sequencia das colunas
