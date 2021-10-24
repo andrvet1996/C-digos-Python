@@ -89,3 +89,5 @@ print(df2)
 #ANALISAR O DF
 df2.describe(include='all')
 print(df2)
+
+
