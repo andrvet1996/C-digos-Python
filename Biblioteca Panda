@@ -42,3 +42,50 @@ print(df1.sample(2))#pega dois valores aleatórios
 
 #NOVO DF A PARTIR DO ANTERIOR
 df2=pd.DataFrame(dados, columns=['ano','estado','pop'])#define sequencia das colunas
+
+#OBSERVAR DF
+print(df2['estado'])
+
+print(df2.ano)
+
+print(df2.dtypes)
+
+#ATRIBUIR valores
+df2['estimativas']=50
+print(df2)
+
+df2['estimativa']=np.arange(6)
+print(df2)
+
+df3=df2
+print(df3)
+
+df3=df2['ano']#só pega o ano
+print(df3)
+
+df2['Não Paraná']=df2.estado!='PR'#compara duas coluns
+print(df2)
+
+#EXCLUIR COLUNAS
+
+del df2['Não Paraná']
+print(df2)
+
+#ENTENDER O DF
+print(df2.shape)#n. de linhas e COLUNAS
+
+print(df2.shape[0])#n.de linhas
+
+print(df2.index)
+
+print(df2.columns)#mostra colunas
+
+print(df2.count())
+
+#ALTERAR INFORMAÇAO DAS colunas
+df2.columns=['Ano','estado','Populacao','estimativa','idade']
+print(df2)
+
+#ANALISAR O DF
+df2.describe(include='all')
+print(df2)
