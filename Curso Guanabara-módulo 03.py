@@ -562,3 +562,25 @@ print('-=' * 30)
 for k, v in aluno.items():
     print(f'  -{k} é igual a {v})
 
+#Desafio 91-Jogo de dados
+from random import randint
+from time import sleep
+from operator import itemgetter
+ranking = dict() #armazenará os valores e ordem. Está vazio.
+jogo = {'jogador 1':randint(1,6),
+'jogador 2':randint(1,6),
+'jogador 3':randint(1,6),
+'jogador 4':randint(1,6)}
+print(jogo)
+print('Valores sorteados: ')
+for k, v in jogo.items():
+    print('O {} tirou {} no dado.'.format(k,v))
+    sleep(1)
+ranking = sorted(jogo.items(), key=itemgetter(1),reverse=True)# parte 1 é a do randint
+#print(ranking)#mostra em forma de lista
+print('=' * 27)
+print(  '==RANKING DOS JOGADORES==')
+for i, v in enumerate (ranking):#transforma lista em dicionario
+    print('{}º lugar: {} com {}.'.format(i+1,v[0],v[1]))
+    sleep(1)
+print('=' * 27)
