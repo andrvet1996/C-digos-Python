@@ -561,6 +561,7 @@ print('-=' * 30)
     
 for k, v in aluno.items():
     print(f'  -{k} é igual a {v})
+          
 
 #Desafio 91-Jogo de dados
 from random import randint
@@ -584,3 +585,19 @@ for i, v in enumerate (ranking):#transforma lista em dicionario
     print('{}º lugar: {} com {}.'.format(i+1,v[0],v[1]))
     sleep(1)
 print('=' * 27)
+
+
+ #Desafio 92-cadastro de trabalhador
+from datetime import datetime
+dados = dict()
+dados['nome'] = str(input('Nome: '))
+nasc = int(input('Ano de nascimento: '))
+dados['idade'] = datetime.now().year - nasc
+dados['ctps'] = int(input('Carteira de Trabalho (0 não possui): '))
+if dados['ctps'] != 0:
+    dados['contratação'] = int(input('Ano de contratação: '))
+    dados['salário'] = float(input('Salário: R$ '))
+    dados['aposentadoria'] = dados['idade'] + ((dados['contratação'] + 35) - datetime.now().year)
+print('-=' * 30)
+for k,v in dados.items():
+    print(f'{k} tem o valor {v}')
