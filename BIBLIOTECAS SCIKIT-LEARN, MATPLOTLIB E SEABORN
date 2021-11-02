@@ -1,0 +1,56 @@
+#BIBLIOTECAS SCIKIT-LEARN, MATPLOTLIB E SEABORN
+#OBS: códigos no Colab (atenção em IDE)
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+#Gerar pontos X,Y
+x=[1,2,3,4,5,6,7,8,9,10]
+y=[1,2,3,4,2,6,7,8,9,10]
+#Plotar X,Y
+plt.scatter(x,y)
+plt.show
+
+#Gerar um novo gráfico (Y é o quadrado de X)
+
+x1= np.arange(-100, 100, 1) #vai de -100 a 100 um em um
+x1
+
+plt.plot (x1, x1**2)
+plt.show()
+
+#Cortar o valor de x (diminuir um pouco y)
+plt.plot(x1, (x1**2)-2000)#tirou 2000 do y
+plt.show()
+
+#Experiênca com dados fabricados
+dias=np.arange(1,31)
+dias
+
+vacinados=np.random.randint(0,1000,30)#gera valores aleatórios de 0 a 1000, para 30 dias
+contagios=np.random.randint(0,700,30)
+vacinados
+
+#Plotar gráfico
+#plt.style.use('classic')
+#plt.style.use('dark_background')
+plt.style.use('default')
+plt.figure(figsize=(10,5))
+plt.bar(dias,vacinados)
+plt.plot(dias,contagios,'r') #contagios com linha vermelha  'r' red
+plt.ylabel('Vacinados por dia')
+plt.show
+
+#Criar DF com dados fabricados
+dados=pd.DataFrame(dias, columns=['Dias'])
+dados['Contagios']=contagios
+dados['Vacinados']=vacinados
+dados
+
+#Plotar gráfico a partir de DF
+dados.plot (kind='bar', x='Dias', y='Vacinados')
+
+#Experimentar biblioteca Seaborn
+sns.barplot(data=dados, x='Dias', y='Vacinados')
+sns.barplot(data=dados, x='Dias', y='Vacinados', color='r')
+sns.lineplot(data=dados, x='Dias', y='Vacinados', color='r')
