@@ -1,0 +1,51 @@
+#Web Scraping(feito no Colab)
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+html=requests.get("https://statisticstimes.com/tech/top-computer-languages.php").content
+soup=BeautifulSoup(html, 'html5lib')
+
+#Encontrar primeiro parágrafo
+primeiro_paragrafo=soap.find('p')
+primeiro_paragrafo
+primeiro_paragrafo.text#pega só o texto
+
+#Pegar todos os parágrafos
+todos_paragrafos=soap.find_all('p')
+todos_paragrafos
+
+#Mostra só primeiro parágrafo
+todos_paragrafos[0]
+
+#Buscar links
+todoslinks=soap.find_all('a')
+todoslinks
+
+#Retirar dados tabela
+
+tabela=soup.find('table',{'id':'table_id1'}).find('tbody')
+tabela
+
+linhas=tabela.find_all('tr')
+for linha in linhas:
+  dado=linha.find_all('td')
+  print(dado[0].text)
+  print(dado[2].text)
+  print(dado[3].text)
+  print('-----')
+
+
+#Montar lista de dados para depois montar DF
+linguagem=[]
+pontos=[]
+for linha in linhas:
+  dado=linha.find_all('td')
+  linguagem.append(dado[2].text)
+  pontos.append(dado[3].text)
+print(linguagem)
+print(pontos)
+
+#Montar DF
+dados=pd.DataFrame(linguagem, columns=['Linguagem'])
+dados['Pontos']=pontos#adicionou coluna pontos
+dados
