@@ -8,3 +8,12 @@ with open ('kaggle_tesla.csv', 'r') as f:
     fechamento=linha[4]
     volume=linha[5]
     print('Data: ',data,'--Fechamento: ',fechamento,'--Volume', volume)
+    
+ #arquivo csv usando pandas
+import csv
+import pandas as pd 
+arquivo='https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2021.csv'
+dados=pd.read_csv(arquivo)
+dados
+dados.winner_hand.value_counts().sort_values().plot(kind='barh')
+ 
