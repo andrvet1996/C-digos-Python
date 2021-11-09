@@ -25,3 +25,10 @@ arquivo='kaggle_tesla.csv'
 dados=pd.read_csv(arquivo,skiprows=1, names=['data','abertura','max','min','fechamento','volume','ajustado'],nrows=4)
 dados
  
+#abrir arquivo JSON
+import json
+import requests
+resposta=requests.get('https://randomuser.me/api')
+dados=json.loads(resposta.text)
+dados
+print(dados['results'][0]['name']['first'])
