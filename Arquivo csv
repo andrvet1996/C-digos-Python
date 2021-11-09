@@ -1,0 +1,10 @@
+#ler arquivos csv
+import csv
+import pandas as pd
+with open ('kaggle_tesla.csv', 'r') as f:
+  leitor=csv.reader(f, delimiter=',')
+  for linha in leitor:
+    data=linha[0]
+    fechamento=linha[4]
+    volume=linha[5]
+    print('Data: ',data,'--Fechamento: ',fechamento,'--Volume', volume)
