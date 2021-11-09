@@ -16,4 +16,12 @@ arquivo='https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_ma
 dados=pd.read_csv(arquivo)
 dados
 dados.winner_hand.value_counts().sort_values().plot(kind='barh')
+
+
+#abrir arquivo Tesla no Pandas
+import csv
+import pandas as pd 
+arquivo='kaggle_tesla.csv'
+dados=pd.read_csv(arquivo,skiprows=1, names=['data','abertura','max','min','fechamento','volume','ajustado'],nrows=4)
+dados
  
