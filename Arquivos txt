@@ -1,0 +1,23 @@
+arquivo=open('machado_de_assis.txt', 'r')#leitura do arquivo
+conteudo=arquivo.readlines()#gera lista com linhas
+arquivo.close()
+print(conteudo)
+print('-------')
+for linha in conteudo:
+  print(linha)
+
+  #alterar Rio de Janeiro por Ribeirão Preto
+  x=''
+  for linha in conteudo:
+    if linha !='':
+      x+=linha
+  print(x)
+  x=x.replace('críticos', 'tolos')
+  print('------')
+  print(x)
+
+  #gravar (gerar um novo artigo) esse arquivo vai ter a informação de críticos 
+  substituído por tolos
+  arquivo_novo=open('machado_de_assis_2.txt','w')
+  arquivo_novo.writelines(x)
+  arquivo_novo.close()
