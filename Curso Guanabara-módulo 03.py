@@ -33,6 +33,50 @@ print(len(c))#conta o numero de elementos
 print(c.count(5))#quantas x aparece 5 na tupla c
 print(c.index(8))#mostra a posiçao do elemento
 
+
+#Desafio 94-Unindo dicionários e listas
+galera = list()
+pessoa = dict()
+soma = media = 0
+
+while True:
+    pessoa.clear()#esvazia a lista para receber outros dados
+    pessoa['nome'] = str(input('Nome: '))
+    while True:
+        pessoa['sexo'] = str(input('Sexo: [M/F] ')).upper() [0]#pega só a primeira letra
+        if pessoa['sexo'] in 'MF':
+            break
+        print('ERRO! Por favor digite apenas M ou F.')
+    pessoa['idade'] = int(input('Idade: '))
+    soma += pessoa['idade']
+    galera.append(pessoa.copy()) # acrescenta os nomes na lista
+    
+    while True:
+        resp = str(input('Quer continuar? [S/N] ')).upper() [0]
+        if resp in 'SN':
+            break
+        print('ERRO! Responda apenas S ou N.')
+    if resp == 'N':
+        break
+ 
+print('-=' * 30)   
+print('A) Ao todo temos {} pessoas cadastradas.'.format(len(galera)))
+media = soma / len(galera)
+print('B) A média das idades é de {:.2f} anos.'.format(media))
+print('C) As mulheres cadastradas foram ', end = ' ')
+for p in galera:
+    if p['sexo'] in 'Ff':
+        print('{}'.format(p['sexo'], end = ' '))
+print('D) lista das pessoas que estão acima da média: ')
+for p in galera:
+    if p['idade'] >= media:
+        print('                ')
+        for k, v in p.items():
+            print ('{} = {}'.format(k, v), end = ' ')
+            print()
+print('<< ENCERRADO >>')
+        
+
 #del (c) esse comando apaga a tupla toda
 
 
@@ -623,3 +667,47 @@ for i, v in enumerate(jogador["gols"]):
         '    => Na partida {i}, fez {v} gols.')
 print(f' Foi um total de {jogador["total"]} gols.')
 
+          
+          
+#Desafio 94-Unindo dicionários e listas
+galera = list()
+pessoa = dict()
+soma = media = 0
+
+while True:
+    pessoa.clear()#esvazia a lista para receber outros dados
+    pessoa['nome'] = str(input('Nome: '))
+    while True:
+        pessoa['sexo'] = str(input('Sexo: [M/F] ')).upper() [0]#pega só a primeira letra
+        if pessoa['sexo'] in 'MF':
+            break
+        print('ERRO! Por favor digite apenas M ou F.')
+    pessoa['idade'] = int(input('Idade: '))
+    soma += pessoa['idade']
+    galera.append(pessoa.copy()) # acrescenta os nomes na lista
+    
+    while True:
+        resp = str(input('Quer continuar? [S/N] ')).upper() [0]
+        if resp in 'SN':
+            break
+        print('ERRO! Responda apenas S ou N.')
+    if resp == 'N':
+        break
+ 
+print('-=' * 30)   
+print('A) Ao todo temos {} pessoas cadastradas.'.format(len(galera)))
+media = soma / len(galera)
+print('B) A média das idades é de {:.2f} anos.'.format(media))
+print('C) As mulheres cadastradas foram ', end = ' ')
+for p in galera:
+    if p['sexo'] in 'Ff':
+        print('{}'.format(p['sexo'], end = ' '))
+print('D) lista das pessoas que estão acima da média: ')
+for p in galera:
+    if p['idade'] >= media:
+        print('                ')
+        for k, v in p.items():
+            print ('{} = {}'.format(k, v), end = ' ')
+            print()
+print('<< ENCERRADO >>')
+        
