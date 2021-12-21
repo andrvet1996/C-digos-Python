@@ -836,3 +836,70 @@ def soma(* valores):
 
 soma(5, 2)
 soma(2, 9, 4)
+          
+          
+          
+ #Desafio 96-cálculo de área
+def área (l, c):
+    a = l * c
+    print(f'A área de um terreno de {l} x {c} é de {a} m2.')
+
+
+print('Controle de terrenos')
+print('-' * 20)
+l = float(input('LARGURA (m): '))
+c = float(input('COMPRIMENTO (m): '))
+área(l, c)
+
+
+#Desafio 97-print especial
+def escreva (msg):
+    tam = len(msg) + 4 # dar 4 = antes de começar a escrever
+    print('=' * tam)
+    print(f'  {msg}  ')#centralizar a mensagem
+    print('=' * tam)
+
+escreva('oi')
+
+
+#Desafio 98-função de contador
+from time import sleep
+def contador (i, f, p): #inicio, fim e passou
+    print('=' * 31)
+    print(f'Contagem de {i} até {f} de {p} em {p}:.')
+    sleep(2.5)
+
+    if p < 0:
+        p *= -1 #deixa o passo positivo
+    if p == 0: #contorna o passo ser igual a 0
+        p = 1
+    if i < f:
+        cont = i
+        while cont <= f:
+            print(f' {cont} ', end=' ', flush=True)#flush é para aparecer os numeros aos poucos
+            sleep(0.5)
+            cont += p
+        print('FIM!')
+    else:
+        cont = i
+        while cont >= f:
+            print(f'  {cont} ', end=' ', flush=True)
+            sleep(0.5)
+            cont -= p
+        print('FIM!')
+    print('=' * 31)
+
+#programa principal
+contador (0, 10, 1)
+contador (10, 0, 2)
+print('=' * 31)
+print('Agora é sua vez de personalizar a contagem!')
+ini = int(input('Início: '))
+fim = int(input('Fim:    '))
+pas = int(input('Passo:  '))
+
+contador(ini, fim, pas)
+
+
+
+
