@@ -924,4 +924,54 @@ def maior(*num):
 maior(2,9,4,5,7,1)
 maior(2,0)
 
+#Aula 21-funções
+#docstring: aspas duplas três vezes
+def contador (i,f,p):
+    """
+    faz uma contagem e mostra na tela
+    :param i: início
+    :param f: final
+    :param p: passo
+    :return: sem retorno
+    """
+    c=i
+    while c<=f:
+        print(f'{c}', end='..')
+        c+=p
+    print('FIM!')
+
+contador (2,10,2)
+help (contador)
+
+
+#parâmetros opcionais
+def somar (a=0,b=0,c=0):#se não declarar o a,b, c ele receberá zero
+    s = a+b+c
+    print(f'A soma vale {s}.')
+somar (3,2,5)
+somar(8,4) #aqui c vale zero
+
+#escopo de variáveis
+def teste():
+    global n #usa o valor global sempre
+    x = 8
+    n = 1
+    print (f'Na função teste n vale {n}.')
+    print(f'Na função teste n vale {x}.')
+
+
+#programa principal
+n = 100 #está dentro do escopo global0
+print (f'No programa principal n vale {n}.')
+
+
+#comando return
+def somar (a=0,b=0, c=0):
+    s = a + b + c
+    return s
+r1 = somar (3,2,5)
+r2 = somar (1,2)
+r3 = somar (1000)
+
+print (f'Meus cálculo deram {r1}, {r2} e {r3}')
 
