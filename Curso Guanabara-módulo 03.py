@@ -974,4 +974,22 @@ r2 = somar (1,2)
 r3 = somar (1000)
 
 print (f'Meus cálculo deram {r1}, {r2} e {r3}')
+          
 
+#Aula 23-tratamento de exceções
+try:
+    n = int(input('Digite o numerador: '))
+    d = int(input('Digite o denominador: '))
+    r = n / d
+except (ValueError, TypeError):
+    print('Tivemos um problema com os tipos de dados que você digitou!')
+except ZeroDivisionError:
+    print('Não é possível dividir um número por zero!')
+except KeyboardInterrupt:
+    print('O usuário preferiu não informar dados.')
+except Exception as erro:
+    print('O erro econtrado foi {erro.__cause__}')
+else:
+    print(f'O resultado é {r:.1f}')
+finally:
+    print('Volte sempre! Muito obrigado!')
