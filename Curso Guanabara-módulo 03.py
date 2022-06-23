@@ -1035,3 +1035,36 @@ def voto (ano):
 #Programa principal
 nasc = int(input('Em que ano você nasceu? '))
 print(voto(1976))
+          
+          
+# Desafio 102-função para fatorial
+
+def fatorial(n, show=False):  # não mostra o cálculo
+    """
+    -> Calcula o fatorial de um número.
+    :param n: o número a ser calculado.
+    :param show:(opcional) mostrar ou não o cálculo.
+    :return: o fatorial de um número n.
+    """
+
+    f = 1
+    for c in range(n, 0, -1):
+        if show:
+            print(c, end='')
+            if c > 1:
+                print(' x ', end='')
+            else:
+                print(' = ', end='')
+        f *= c
+    return f
+
+# programa principal
+print(12 * '+-')
+print(fatorial(5, show=True))  # aparece o cálculo
+print(12 * '+-')
+print(fatorial(5, show=False))  # não aparece o cálculo
+print(12 * '+-')
+
+help(fatorial)
+
+
