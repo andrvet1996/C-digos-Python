@@ -1066,5 +1066,22 @@ print(fatorial(5, show=False))  # não aparece o cálculo
 print(12 * '+-')
 
 help(fatorial)
+          
+          
+# Desafio 103-ficha do jogador
+def ficha (jog='<desconhecido>', gol=0): #se eu não digitar nada imprimirá esses parâmetros
+    print (f'O jogador {jog} fez {g} gol(-s) no campeonato.')
+
+# programa principal
+n = str(input('Nome do jogador: '))
+g = str(input('Número de gols: '))
+if g.isnumeric():
+    g = int (g)
+else:
+    g = 0
+if n.strip() == '':
+    ficha (gol = g)
+else:
+    ficha(n, g)
 
 
